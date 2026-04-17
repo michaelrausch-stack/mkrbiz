@@ -1,0 +1,1138 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Maikel Rausch — Coaching & Mentoring de dirigeants | Paris, Genève, Bruxelles</title>
+<meta name="description" content="Coaching exécutif et mentoring pour dirigeants, cadres et entrepreneurs. 20 ans en management international (Avaya, Bosch), coach certifié Co-Active / ICF. Entretien découverte confidentiel." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink:          #0B1623;
+    --ink-2:        #13202F;
+    --ink-3:        #1E2D40;
+    --cream:        #F5F1EA;
+    --off-white:    #FAFAF7;
+    --gold:         #C9A86A;
+    --gold-soft:    #E2CFA3;
+    --text-light:   #E8E4DB;
+    --text-muted:   #9BA3AD;
+    --text-dark:    #13202F;
+    --text-subtle:  #5B6878;
+    --border:       #2A3A50;
+    --border-light: #E6E0D3;
+    --max:          1180px;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-size: 16px;
+    line-height: 1.65;
+    color: var(--text-dark);
+    background: var(--off-white);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  h1, h2, h3, h4 {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-weight: 500;
+    letter-spacing: -0.01em;
+    line-height: 1.15;
+    margin: 0 0 0.6em;
+    color: var(--ink);
+  }
+  h1 { font-size: clamp(2.4rem, 5vw, 4.2rem); font-weight: 500; }
+  h2 { font-size: clamp(1.9rem, 3.2vw, 2.9rem); }
+  h3 { font-size: 1.45rem; }
+  p  { margin: 0 0 1em; }
+  a  { color: inherit; text-decoration: none; }
+  .container { max-width: var(--max); margin: 0 auto; padding: 0 24px; }
+
+  /* ---------- NAV ---------- */
+  .nav {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background: rgba(11, 22, 35, 0.94);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(201, 168, 106, 0.15);
+  }
+  .nav-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 24px;
+    max-width: var(--max);
+    margin: 0 auto;
+  }
+  .brand {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.45rem;
+    font-weight: 600;
+    color: var(--cream);
+    letter-spacing: 0.02em;
+  }
+  .brand .dot { color: var(--gold); }
+  .nav-links {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    font-size: 0.92rem;
+    color: var(--text-light);
+  }
+  .nav-links a { transition: color .2s; }
+  .nav-links a:hover { color: var(--gold-soft); }
+  .nav-cta {
+    padding: 10px 20px;
+    border: 1px solid var(--gold);
+    color: var(--gold-soft);
+    font-weight: 500;
+    letter-spacing: 0.03em;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    transition: all .25s;
+  }
+  .nav-cta:hover { background: var(--gold); color: var(--ink); }
+  .lang {
+    font-size: 0.78rem;
+    color: var(--text-muted);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+  .lang .active { color: var(--gold); }
+  .lang span { margin: 0 6px; }
+  @media (max-width: 860px) {
+    .nav-links { display: none; }
+    .nav-cta { display: none; }
+  }
+
+  /* ---------- HERO ---------- */
+  .hero {
+    background: linear-gradient(180deg, var(--ink) 0%, var(--ink-2) 100%);
+    color: var(--text-light);
+    padding: 110px 0 90px;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: "";
+    position: absolute;
+    top: -40%;
+    right: -20%;
+    width: 60%;
+    height: 140%;
+    background: radial-gradient(ellipse at center, rgba(201, 168, 106, 0.12), transparent 60%);
+    pointer-events: none;
+  }
+  .hero-inner {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    gap: 80px;
+    align-items: center;
+  }
+  .eyebrow {
+    font-size: 0.78rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 26px;
+    font-weight: 500;
+  }
+  .eyebrow::before {
+    content: "— ";
+    margin-right: 2px;
+  }
+  .hero h1 {
+    color: var(--cream);
+    font-weight: 400;
+    font-size: clamp(2.6rem, 5.4vw, 4.6rem);
+    margin-bottom: 28px;
+  }
+  .hero h1 em {
+    font-style: italic;
+    color: var(--gold-soft);
+  }
+  .hero-sub {
+    font-size: 1.15rem;
+    color: var(--text-light);
+    max-width: 560px;
+    margin-bottom: 44px;
+    line-height: 1.6;
+  }
+  .cta-row {
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .btn {
+    display: inline-block;
+    padding: 17px 34px;
+    font-size: 0.92rem;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    transition: all .25s;
+    cursor: pointer;
+    border: 1px solid transparent;
+  }
+  .btn-primary {
+    background: var(--gold);
+    color: var(--ink);
+  }
+  .btn-primary:hover {
+    background: var(--gold-soft);
+    transform: translateY(-1px);
+  }
+  .btn-ghost {
+    border-color: rgba(232, 228, 219, 0.35);
+    color: var(--cream);
+  }
+  .btn-ghost:hover {
+    border-color: var(--gold);
+    color: var(--gold-soft);
+  }
+  .portrait {
+    position: relative;
+    aspect-ratio: 4 / 5;
+    background-image: url('hero-portrait.jpg');
+    background-size: cover;
+    background-position: center 20%;
+    border: 1px solid rgba(201, 168, 106, 0.35);
+  }
+  .portrait::after {
+    content: "";
+    position: absolute;
+    inset: 12px;
+    border: 1px solid rgba(201, 168, 106, 0.22);
+    pointer-events: none;
+  }
+  @media (max-width: 860px) {
+    .hero-inner { grid-template-columns: 1fr; gap: 50px; }
+    .portrait { max-width: 320px; margin: 0 auto; }
+  }
+
+  /* ---------- TRUST BAR ---------- */
+  .trust-bar {
+    background: var(--ink-2);
+    border-top: 1px solid rgba(201, 168, 106, 0.2);
+    border-bottom: 1px solid rgba(201, 168, 106, 0.2);
+    padding: 32px 0;
+    color: var(--text-light);
+  }
+  .trust-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+  .trust-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    min-width: 140px;
+    text-align: center;
+  }
+  .trust-num {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.1rem;
+    color: var(--gold);
+    font-weight: 500;
+    line-height: 1;
+  }
+  .trust-label {
+    font-size: 0.76rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+  }
+  .trust-sep {
+    width: 1px;
+    align-self: stretch;
+    background: rgba(201, 168, 106, 0.25);
+  }
+  @media (max-width: 760px) {
+    .trust-sep { display: none; }
+  }
+
+  /* ---------- SECTION ---------- */
+  section { padding: 110px 0; }
+  .section-eyebrow {
+    font-size: 0.78rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 22px;
+    font-weight: 500;
+  }
+  .section-eyebrow::before { content: "— "; }
+  .lead {
+    font-size: 1.2rem;
+    color: var(--text-subtle);
+    max-width: 720px;
+    line-height: 1.7;
+  }
+
+  /* ---------- FOR WHOM ---------- */
+  .for-whom { background: var(--cream); }
+  .whom-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    margin-top: 60px;
+  }
+  .whom-card {
+    background: var(--off-white);
+    padding: 42px 36px;
+    border-top: 2px solid var(--gold);
+    position: relative;
+  }
+  .whom-card h3 {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.82rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--gold);
+    font-weight: 600;
+    margin-bottom: 16px;
+  }
+  .whom-card h4 {
+    font-size: 1.55rem;
+    margin-bottom: 16px;
+  }
+  .whom-card p {
+    color: var(--text-subtle);
+    font-size: 0.97rem;
+    margin: 0;
+  }
+  @media (max-width: 860px) {
+    .whom-grid { grid-template-columns: 1fr; }
+  }
+
+  /* ---------- ABOUT ---------- */
+  .about { background: var(--off-white); }
+  .about-inner {
+    display: grid;
+    grid-template-columns: 1fr 1.3fr;
+    gap: 80px;
+    align-items: start;
+  }
+  .about-portrait {
+    aspect-ratio: 3 / 4;
+    background-image: linear-gradient(to top, rgba(11,22,35,0.7) 0%, rgba(11,22,35,0.1) 50%, transparent 100%), url('about-coaching.jpg');
+    background-size: cover;
+    background-position: center;
+    color: var(--text-muted);
+    border-top: 3px solid var(--gold);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 40px;
+  }
+  .about-portrait .name {
+    font-family: 'Cormorant Garamond', serif;
+    color: var(--cream);
+    font-size: 1.8rem;
+    line-height: 1.2;
+    margin: 0 0 6px;
+  }
+  .about-portrait .role {
+    font-size: 0.82rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--gold);
+  }
+  .about h2 { max-width: 560px; }
+  .about p { color: var(--text-subtle); font-size: 1.02rem; }
+  .sig {
+    margin-top: 32px;
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    color: var(--ink);
+    font-size: 1.4rem;
+  }
+  @media (max-width: 860px) {
+    .about-inner { grid-template-columns: 1fr; gap: 40px; }
+  }
+
+  /* ---------- SERVICES ---------- */
+  .services {
+    background: var(--ink);
+    color: var(--text-light);
+  }
+  .services h2 { color: var(--cream); }
+  .services .lead { color: var(--text-light); opacity: 0.85; }
+  .svc-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+    margin-top: 60px;
+  }
+  .svc-card {
+    background: var(--ink-2);
+    border: 1px solid var(--border);
+    padding: 44px 36px;
+    position: relative;
+    transition: all .3s;
+  }
+  .svc-card:hover {
+    border-color: var(--gold);
+    transform: translateY(-4px);
+  }
+  .svc-card .num {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.1rem;
+    color: var(--gold);
+    letter-spacing: 0.1em;
+    margin-bottom: 22px;
+  }
+  .svc-card h4 {
+    color: var(--cream);
+    font-size: 1.6rem;
+    margin-bottom: 18px;
+    font-family: 'Cormorant Garamond', serif;
+  }
+  .svc-card p {
+    color: var(--text-light);
+    opacity: 0.8;
+    font-size: 0.96rem;
+    line-height: 1.65;
+  }
+  .svc-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0;
+  }
+  .svc-card li {
+    padding: 8px 0 8px 20px;
+    position: relative;
+    font-size: 0.9rem;
+    color: var(--text-light);
+    opacity: 0.85;
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+  }
+  .svc-card li::before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: var(--gold);
+  }
+  .svc-card li:last-child { border-bottom: none; }
+  @media (max-width: 860px) {
+    .svc-grid { grid-template-columns: 1fr; }
+  }
+
+  /* ---------- METHOD ---------- */
+  .method { background: var(--cream); }
+  .method-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+  }
+  .method blockquote {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.85rem;
+    line-height: 1.4;
+    color: var(--ink);
+    font-weight: 400;
+    margin: 0;
+    padding: 0 0 0 30px;
+    border-left: 2px solid var(--gold);
+    font-style: italic;
+  }
+  .method-principles {
+    display: grid;
+    gap: 28px;
+  }
+  .principle {
+    display: flex;
+    gap: 22px;
+    align-items: flex-start;
+  }
+  .principle .mark {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.6rem;
+    color: var(--gold);
+    min-width: 40px;
+    line-height: 1.1;
+    font-weight: 500;
+  }
+  .principle h4 {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--ink);
+    margin: 0 0 6px;
+  }
+  .principle p {
+    margin: 0;
+    font-size: 0.97rem;
+    color: var(--text-subtle);
+  }
+  @media (max-width: 860px) {
+    .method-grid { grid-template-columns: 1fr; gap: 50px; }
+  }
+
+  /* ---------- PROCESS ---------- */
+  .process { background: var(--off-white); }
+  .process-steps {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+    margin-top: 70px;
+    position: relative;
+  }
+  .step {
+    position: relative;
+    padding-top: 24px;
+    border-top: 1px solid var(--border-light);
+  }
+  .step .step-num {
+    position: absolute;
+    top: -16px;
+    left: 0;
+    background: var(--off-white);
+    padding-right: 14px;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.9rem;
+    color: var(--gold);
+    font-weight: 500;
+    line-height: 1;
+  }
+  .step h4 {
+    font-size: 1.2rem;
+    margin: 8px 0 10px;
+    font-family: 'Cormorant Garamond', serif;
+  }
+  .step p {
+    font-size: 0.93rem;
+    color: var(--text-subtle);
+    margin: 0;
+  }
+  @media (max-width: 860px) {
+    .process-steps { grid-template-columns: 1fr; gap: 36px; }
+  }
+
+  /* ---------- TESTIMONIALS ---------- */
+  .testimonials { background: var(--cream); }
+  .test-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+    margin-top: 60px;
+  }
+  .test-card {
+    background: var(--off-white);
+    padding: 42px 34px;
+    border-top: 2px solid var(--gold);
+    position: relative;
+  }
+  .test-card::before {
+    content: "\201C";
+    position: absolute;
+    top: 16px;
+    right: 28px;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 5rem;
+    color: var(--gold);
+    opacity: 0.25;
+    line-height: 1;
+  }
+  .test-card p {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.15rem;
+    font-style: italic;
+    color: var(--ink);
+    line-height: 1.55;
+    margin: 0 0 26px;
+  }
+  .test-meta {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding-top: 22px;
+    border-top: 1px solid var(--border-light);
+  }
+  .test-avatar {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--gold), var(--ink-2));
+    color: var(--cream);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.1rem;
+    font-weight: 500;
+  }
+  .test-name {
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: var(--ink);
+    margin: 0;
+  }
+  .test-role {
+    font-size: 0.82rem;
+    color: var(--text-subtle);
+    margin: 2px 0 0;
+  }
+  @media (max-width: 860px) {
+    .test-grid { grid-template-columns: 1fr; }
+  }
+
+  /* ---------- FAQ ---------- */
+  .faq { background: var(--off-white); }
+  .faq-list {
+    margin-top: 50px;
+    border-top: 1px solid var(--border-light);
+  }
+  details {
+    border-bottom: 1px solid var(--border-light);
+    padding: 28px 0;
+    cursor: pointer;
+  }
+  summary {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.35rem;
+    color: var(--ink);
+    font-weight: 500;
+  }
+  summary::-webkit-details-marker { display: none; }
+  summary::after {
+    content: "+";
+    font-family: 'Inter', sans-serif;
+    font-size: 1.6rem;
+    color: var(--gold);
+    font-weight: 300;
+    transition: transform .2s;
+  }
+  details[open] summary::after {
+    content: "−";
+  }
+  details p {
+    margin-top: 18px;
+    color: var(--text-subtle);
+    font-size: 1rem;
+    max-width: 820px;
+  }
+
+  /* ---------- FINAL CTA ---------- */
+  .final-cta {
+    background: var(--ink);
+    color: var(--cream);
+    text-align: center;
+    padding: 120px 0;
+    position: relative;
+    overflow: hidden;
+  }
+  .final-cta::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at center, rgba(201,168,106,0.1), transparent 70%);
+    pointer-events: none;
+  }
+  .final-cta h2 {
+    color: var(--cream);
+    font-size: clamp(2rem, 4vw, 3.4rem);
+    font-weight: 400;
+    margin-bottom: 24px;
+    position: relative;
+  }
+  .final-cta h2 em {
+    font-style: italic;
+    color: var(--gold-soft);
+  }
+  .final-cta p {
+    font-size: 1.1rem;
+    max-width: 560px;
+    margin: 0 auto 44px;
+    color: var(--text-light);
+    opacity: 0.9;
+    position: relative;
+  }
+  .final-cta .btn { position: relative; }
+  .final-note {
+    display: block;
+    margin-top: 22px;
+    font-size: 0.82rem;
+    color: var(--text-muted);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    position: relative;
+  }
+
+  /* ---------- FOOTER ---------- */
+  footer {
+    background: var(--ink-2);
+    color: var(--text-muted);
+    padding: 60px 0 32px;
+    font-size: 0.88rem;
+  }
+  .foot-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+    gap: 40px;
+    padding-bottom: 44px;
+    border-bottom: 1px solid rgba(201, 168, 106, 0.2);
+  }
+  .foot-brand {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.6rem;
+    color: var(--cream);
+    margin-bottom: 14px;
+  }
+  .foot-brand .dot { color: var(--gold); }
+  .foot-tag {
+    color: var(--text-muted);
+    max-width: 320px;
+    line-height: 1.6;
+  }
+  .foot-col h5 {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.78rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin: 0 0 18px;
+    font-weight: 600;
+  }
+  .foot-col ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .foot-col li { margin-bottom: 10px; }
+  .foot-col a { color: var(--text-light); opacity: 0.78; transition: opacity .2s; }
+  .foot-col a:hover { opacity: 1; color: var(--gold-soft); }
+  .foot-bottom {
+    padding-top: 32px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 16px;
+    font-size: 0.78rem;
+    color: var(--text-muted);
+  }
+  .foot-bottom .legal { letter-spacing: 0.06em; }
+  .foot-bottom .legal span { color: var(--text-muted); margin-right: 10px; }
+  @media (max-width: 860px) {
+    .foot-grid { grid-template-columns: 1fr 1fr; gap: 32px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ========================= NAV ========================= -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="#">Maikel Rausch<span class="dot">.</span></a>
+    <div class="nav-links">
+      <a href="#pour-qui">Pour qui</a>
+      <a href="#a-propos">À propos</a>
+      <a href="#services">Accompagnements</a>
+      <a href="#methode">Méthode</a>
+      <a href="#temoignages">Témoignages</a>
+      <span class="lang"><span class="active">FR</span>·<span>EN</span>·<span>DE</span>·<span>ES</span></span>
+    </div>
+    <a class="nav-cta" href="#rdv">Entretien découverte</a>
+  </div>
+</nav>
+
+<!-- ========================= HERO ========================= -->
+<header class="hero">
+  <div class="container hero-inner">
+    <div>
+      <div class="eyebrow">Coaching & mentoring de dirigeants</div>
+      <h1>Retrouver de la clarté, de la puissance et du <em>sens</em> dans l'exercice du pouvoir.</h1>
+      <p class="hero-sub">
+        Accompagnement confidentiel, sur-mesure, pour dirigeants, cadres dirigeants et fondateurs qui veulent prendre des décisions justes, incarner un leadership durable et retrouver leur souffle. En présentiel à Paris, Bruxelles, Genève — ou en visio partout en Europe.
+      </p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="#rdv">Demander un entretien confidentiel</a>
+        <a class="btn btn-ghost" href="#services">Découvrir les accompagnements</a>
+      </div>
+    </div>
+    <div class="portrait"></div>
+  </div>
+</header>
+
+<!-- ========================= TRUST BAR ========================= -->
+<section class="trust-bar" style="padding: 32px 0;">
+  <div class="container trust-inner">
+    <div class="trust-item">
+      <div class="trust-num">20+</div>
+      <div class="trust-label">ans en management international</div>
+    </div>
+    <div class="trust-sep"></div>
+    <div class="trust-item">
+      <div class="trust-num">ICF</div>
+      <div class="trust-label">Coach certifié Co-Active</div>
+    </div>
+    <div class="trust-sep"></div>
+    <div class="trust-item">
+      <div class="trust-num">4</div>
+      <div class="trust-label">Langues de travail — FR · EN · DE · ES</div>
+    </div>
+    <div class="trust-sep"></div>
+    <div class="trust-item">
+      <div class="trust-num">Mentorday</div>
+      <div class="trust-label">Mentor agréé start-up</div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================= FOR WHOM ========================= -->
+<section class="for-whom" id="pour-qui">
+  <div class="container">
+    <div class="section-eyebrow">Pour qui</div>
+    <h2>Aux dirigeants qui portent beaucoup — et qui veulent porter autrement.</h2>
+    <p class="lead">
+      Vous avez réussi. Vous avez gravi les échelons, pris des responsabilités, livré des résultats. Et aujourd'hui, quelque chose appelle un ajustement : une décision à prendre, une posture à retrouver, un virage à négocier. Vous n'avez pas besoin d'un énième outil — vous avez besoin d'un espace pour penser clair.
+    </p>
+    <div class="whom-grid">
+      <div class="whom-card">
+        <h3>Dirigeants</h3>
+        <h4>La solitude du sommet</h4>
+        <p>CEO, dirigeants d'unité, fondateurs. Vous portez la stratégie et la cohésion — mais vous avez peu d'endroits où penser à voix haute, sans agenda caché.</p>
+      </div>
+      <div class="whom-card">
+        <h3>Cadres dirigeants</h3>
+        <h4>Prise de poste, changement d'échelle</h4>
+        <p>Nouveau rôle, nouveau périmètre, nouvelle organisation. Les 90 premiers jours fixent l'impression durable. Structurer l'entrée vaut mieux que la rattraper.</p>
+      </div>
+      <div class="whom-card">
+        <h3>Entrepreneurs</h3>
+        <h4>Passer de l'exécution au leadership</h4>
+        <p>Votre entreprise grandit plus vite que votre posture. Déléguer, lâcher, incarner : le travail n'est plus le même. L'accompagnement vous aide à faire le pas.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================= ABOUT ========================= -->
+<section class="about" id="a-propos">
+  <div class="container about-inner">
+    <div class="about-portrait">
+      <div class="role">Votre coach</div>
+      <div class="name">Maikel Rausch</div>
+    </div>
+    <div>
+      <div class="section-eyebrow">Parcours</div>
+      <h2>Vingt ans à diriger. Puis le choix de transmettre.</h2>
+      <p>
+        Pendant plus de vingt ans, j'ai occupé des postes de direction — directeur d'unité d'affaires, directeur du contrôle de gestion, directeur marketing, directeur commercial — au sein de grands groupes internationaux comme Avaya et Bosch, en France et à l'étranger. J'y ai connu les décisions qui pèsent, les arbitrages que personne ne voit, la responsabilité des équipes qu'on fait avancer.
+      </p>
+      <p>
+        Puis j'ai fait le choix d'accompagner des PME et des start-ups comme consultant et mentor — et c'est là que j'ai compris que ma vraie vocation n'était pas de dire aux dirigeants ce qu'il fallait faire, mais de les aider à trouver ce qu'ils savaient déjà. Je me suis alors formé au coaching Co-Active selon les standards les plus exigeants du secteur — ceux de l'<strong>International Coach Federation (ICF)</strong>, les seuls reconnus par la Harvard Business School — et je suis aujourd'hui membre de l'ICF et de l'accélérateur Mentorday.
+      </p>
+      <p>
+        Je travaille en français, anglais, allemand et espagnol, en présentiel à Paris, Bruxelles et Genève ou en visio dans toute l'Europe.
+      </p>
+      <div class="sig">— Maikel</div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================= SERVICES ========================= -->
+<section class="services" id="services">
+  <div class="container">
+    <div class="section-eyebrow">Accompagnements</div>
+    <h2>Trois façons de travailler ensemble.</h2>
+    <p class="lead">Chaque accompagnement est entièrement sur-mesure. Le cadre, lui, est clair : des objectifs co-construits, des séances espacées, un engagement de confidentialité absolue.</p>
+
+    <div class="svc-grid">
+      <div class="svc-card">
+        <div class="num">I.</div>
+        <h4>Coaching de dirigeant</h4>
+        <p>Un accompagnement individuel pour dirigeants et cadres dirigeants qui veulent clarifier une décision, retrouver leur posture, ou traverser un moment charnière — fusion, réorganisation, prise de poste, plafond de verre.</p>
+        <ul>
+          <li>8 à 12 séances</li>
+          <li>Rythme bi-mensuel</li>
+          <li>Présentiel ou visio</li>
+          <li>Confidentialité absolue</li>
+        </ul>
+      </div>
+      <div class="svc-card">
+        <div class="num">II.</div>
+        <h4>Mentoring entrepreneurial</h4>
+        <p>Pour fondateurs et dirigeants de PME qui veulent un regard expérimenté sur leurs choix stratégiques, leur modèle, leur gouvernance. Un mélange de coaching et de retour d'expérience terrain.</p>
+        <ul>
+          <li>6 à 10 séances</li>
+          <li>Rythme mensuel</li>
+          <li>Format libre selon vos enjeux</li>
+          <li>Accès entre les séances</li>
+        </ul>
+      </div>
+      <div class="svc-card">
+        <div class="num">III.</div>
+        <h4>Accompagnement 90 jours</h4>
+        <p>Un programme intensif pour structurer une prise de poste ou un changement d'échelle : cadrage de la première semaine, plan des 30/60/90 jours, premières décisions, premières relations.</p>
+        <ul>
+          <li>12 séances sur 3 mois</li>
+          <li>Rythme hebdomadaire</li>
+          <li>Visio possible</li>
+          <li>Livrables partagés</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================= METHOD ========================= -->
+<section class="method" id="methode">
+  <div class="container method-grid">
+    <div>
+      <div class="section-eyebrow">Ma méthode</div>
+      <h2>L'approche Co-Active : penser avec toute la personne.</h2>
+      <blockquote>
+        "Mon rôle n'est pas de vous donner des réponses. C'est de vous rendre l'espace, le silence et les bonnes questions pour que les vôtres émergent."
+      </blockquote>
+    </div>
+    <div class="method-principles">
+      <div class="principle">
+        <div class="mark">I.</div>
+        <div>
+          <h4>Confidentialité absolue</h4>
+          <p>Ce qui se dit en séance n'en sort pas. Pas de rapport à l'entreprise, pas de restitution, pas d'agenda caché.</p>
+        </div>
+      </div>
+      <div class="principle">
+        <div class="mark">II.</div>
+        <div>
+          <h4>Sur-mesure</h4>
+          <p>Aucune grille toute faite. Chaque accompagnement est construit avec vous, en fonction de vos enjeux et de votre rythme.</p>
+        </div>
+      </div>
+      <div class="principle">
+        <div class="mark">III.</div>
+        <div>
+          <h4>Écoute et bienveillance</h4>
+          <p>Un espace où vous pouvez penser à voix haute — y compris les choses que vous ne dites nulle part ailleurs.</p>
+        </div>
+      </div>
+      <div class="principle">
+        <div class="mark">IV.</div>
+        <div>
+          <h4>Performance durable</h4>
+          <p>L'objectif n'est pas une étincelle, c'est un changement qui tient : décisions plus claires, posture plus solide, relations plus justes.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================= PROCESS ========================= -->
+<section class="process">
+  <div class="container">
+    <div class="section-eyebrow">Déroulement</div>
+    <h2>Comment se passe un accompagnement.</h2>
+    <p class="lead">Un cadre clair, dès la première prise de contact. Vous savez exactement à quoi vous engager — et à quoi vous n'êtes pas engagé.</p>
+
+    <div class="process-steps">
+      <div class="step">
+        <div class="step-num">01</div>
+        <h4>Entretien découverte</h4>
+        <p>45 minutes, confidentiel, sans engagement. Nous parlons de ce qui vous amène et vous repartez avec une lecture claire, même si nous ne travaillons pas ensemble.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">02</div>
+        <h4>Cadrage</h4>
+        <p>Si le courant passe, nous co-construisons vos objectifs, le nombre de séances, la cadence et le format. Le devis est clair et sans surprise.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">03</div>
+        <h4>Accompagnement</h4>
+        <p>Les séances s'enchaînent au rythme convenu, 75 à 90 minutes, en présentiel ou en visio. Entre les séances, un accès direct par e-mail reste possible.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">04</div>
+        <h4>Clôture</h4>
+        <p>Nous faisons le point sur les avancées, nommons ce qui a changé, et vous repartez avec une feuille de route d'ancrage pour les mois qui suivent.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================= TESTIMONIALS ========================= -->
+<section class="testimonials" id="temoignages">
+  <div class="container">
+    <div class="section-eyebrow">Paroles de clients</div>
+    <h2>Ce que les dirigeants qui ont passé ce cap en disent.</h2>
+
+    <div class="test-grid">
+      <div class="test-card">
+        <p>Ce qui m'a marqué, c'est la qualité d'écoute. Je suis arrivé avec une décision à prendre, je suis reparti avec la clarté que j'avais perdue depuis des mois.</p>
+        <div class="test-meta">
+          <div class="test-avatar">CL</div>
+          <div>
+            <p class="test-name">C. L.</p>
+            <p class="test-role">Directrice générale, industrie — Paris</p>
+          </div>
+        </div>
+      </div>
+      <div class="test-card">
+        <p>Un accompagnement d'une rare justesse. Maikel connaît le pouvoir de l'intérieur — ça change tout quand on a besoin qu'on vous comprenne sans avoir à tout expliquer.</p>
+        <div class="test-meta">
+          <div class="test-avatar">PB</div>
+          <div>
+            <p class="test-name">P. B.</p>
+            <p class="test-role">CEO, scale-up tech — Genève</p>
+          </div>
+        </div>
+      </div>
+      <div class="test-card">
+        <p>J'ai pris mes nouvelles fonctions avec beaucoup plus de sérénité. Les 90 premiers jours auraient été difficiles sans cet accompagnement — ils ont été solides.</p>
+        <div class="test-meta">
+          <div class="test-avatar">ME</div>
+          <div>
+            <p class="test-name">M. E.</p>
+            <p class="test-role">Directeur commercial Europe — Bruxelles</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p style="margin-top: 40px; font-size: 0.88rem; color: var(--text-subtle); font-style: italic;">Les témoignages sont publiés avec l'accord des personnes citées. Noms complets et entreprises disponibles sur demande dans un cadre confidentiel.</p>
+  </div>
+</section>
+
+<!-- ========================= FAQ ========================= -->
+<section class="faq">
+  <div class="container">
+    <div class="section-eyebrow">Questions fréquentes</div>
+    <h2>Avant de prendre contact.</h2>
+
+    <div class="faq-list">
+      <details>
+        <summary>Quelle est la différence entre coaching et thérapie ?</summary>
+        <p>Le coaching travaille sur le présent et le futur : décisions, posture, leadership, performance durable. La thérapie travaille sur le passé et la souffrance. Si votre besoin relève de la seconde, je vous orienterai vers un professionnel compétent — c'est un principe déontologique de l'ICF.</p>
+      </details>
+      <details>
+        <summary>Combien de séances faut-il prévoir ?</summary>
+        <p>Un accompagnement classique comporte 8 à 12 séances, espacées de deux semaines. L'accompagnement 90 jours est plus intensif (12 séances hebdomadaires sur 3 mois). La durée est fixée d'un commun accord lors du cadrage — rien n'est imposé.</p>
+      </details>
+      <details>
+        <summary>Comment se passe la confidentialité ?</summary>
+        <p>Rigoureuse et absolue. Ce qui se dit en séance ne sort pas de la séance. Si votre entreprise finance l'accompagnement, un cadre tripartite est posé dès le départ — objectifs partagés, contenu strictement confidentiel.</p>
+      </details>
+      <details>
+        <summary>Présentiel ou visio ?</summary>
+        <p>Les deux formats donnent d'excellents résultats. Le présentiel est disponible à Paris, Bruxelles et Genève selon les périodes. La visio me permet d'accompagner des dirigeants dans toute l'Europe et au-delà, en français, anglais, allemand ou espagnol.</p>
+      </details>
+      <details>
+        <summary>Qu'est-ce que le coaching Co-Active ?</summary>
+        <p>Une approche reconnue par l'International Coach Federation qui considère la personne dans sa globalité — pas seulement les objectifs, mais aussi les valeurs, les équilibres, le sens. C'est une méthode exigeante et particulièrement adaptée aux dirigeants qui veulent des résultats durables, pas des solutions cosmétiques.</p>
+      </details>
+      <details>
+        <summary>Quels sont les tarifs ?</summary>
+        <p>Les honoraires sont présentés lors de l'entretien découverte, en fonction du format retenu et du nombre de séances. L'entretien découverte lui-même est sans engagement et sans frais.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ========================= FINAL CTA ========================= -->
+<section class="final-cta" id="rdv">
+  <div class="container">
+    <h2>45 minutes, confidentielles, <em>sans engagement.</em></h2>
+    <p>Un entretien découverte pour parler de ce qui vous amène, voir si le courant passe, et repartir avec une lecture claire — que nous travaillions ensemble ou non.</p>
+    <a class="btn btn-primary" href="mailto:michael.rausch@mkrbiz.coach">Demander un entretien confidentiel</a>
+    <span class="final-note">Réponse sous 48 heures ouvrées</span>
+  </div>
+</section>
+
+<!-- ========================= FOOTER ========================= -->
+<footer>
+  <div class="container">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-brand">Maikel Rausch<span class="dot">.</span></div>
+        <p class="foot-tag">Coaching & mentoring confidentiels pour dirigeants, cadres dirigeants et entrepreneurs. Paris · Bruxelles · Genève · en ligne.</p>
+      </div>
+      <div class="foot-col">
+        <h5>Accompagnements</h5>
+        <ul>
+          <li><a href="#services">Coaching de dirigeant</a></li>
+          <li><a href="#services">Mentoring entrepreneurial</a></li>
+          <li><a href="#services">Programme 90 jours</a></li>
+          <li><a href="#methode">Méthode Co-Active</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h5>À propos</h5>
+        <ul>
+          <li><a href="#a-propos">Parcours</a></li>
+          <li><a href="#temoignages">Témoignages</a></li>
+          <li><a href="#">Publications</a></li>
+          <li><a href="#rdv">Prendre contact</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h5>Légal</h5>
+        <ul>
+          <li><a href="mentions-legales.html">Mentions légales</a></li>
+          <li><a href="politique-confidentialite.html">Politique de confidentialité</a></li>
+          <li><a href="cgv.html">Conditions générales</a></li>
+          <li><a href="https://coachingfederation.org/ethics/code-of-ethics" target="_blank" rel="noopener">Déontologie ICF</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <div>&copy; 2026 Maikel Rausch Coaching. Tous droits réservés.</div>
+      <div class="legal"><span>MKRBIZCOACH — NIF ESX5748560D</span><span>Lugo · Espagne</span>Membre ICF · Mentorday</div>
+    </div>
+  </div>
+</footer>
+
+<!-- ========================= COOKIE BANNER (RGPD) ========================= -->
+<div id="cookie-banner" role="dialog" aria-live="polite" aria-label="Gestion des cookies" style="position:fixed;bottom:0;left:0;right:0;z-index:100;background:rgba(11,22,35,0.97);backdrop-filter:blur(10px);color:#E8E4DB;padding:22px 24px;border-top:1px solid rgba(201,168,106,0.3);display:none;font-family:'Inter',sans-serif;font-size:0.92rem;line-height:1.55;">
+  <div style="max-width:1180px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:28px;flex-wrap:wrap;">
+    <div style="flex:1;min-width:260px;">
+      <strong style="font-family:'Cormorant Garamond',serif;color:#E2CFA3;font-size:1.1rem;display:block;margin-bottom:4px;font-weight:600;">Respect de votre vie privée</strong>
+      Ce site ne dépose <strong style="color:#E2CFA3;">aucun cookie de mesure d'audience ni de profilage</strong>. Il charge uniquement les polices de caractères Google Fonts, nécessaires à l'affichage. En savoir plus dans notre <a href="politique-confidentialite.html" style="color:#C9A86A;text-decoration:underline;">politique de confidentialité</a>.
+    </div>
+    <div style="display:flex;gap:12px;flex-wrap:wrap;">
+      <button id="cookie-accept" style="background:#C9A86A;color:#0B1623;border:none;padding:12px 24px;font-size:0.82rem;font-weight:500;letter-spacing:0.08em;text-transform:uppercase;cursor:pointer;font-family:inherit;transition:background .2s;">J'ai compris</button>
+    </div>
+  </div>
+</div>
+<script>
+  (function(){
+    var KEY = 'mkrbiz-cookie-ack-v1';
+    var banner = document.getElementById('cookie-banner');
+    var btn = document.getElementById('cookie-accept');
+    try {
+      if (!localStorage.getItem(KEY)) {
+        banner.style.display = 'block';
+      }
+    } catch(e) {
+      banner.style.display = 'block';
+    }
+    btn.addEventListener('click', function(){
+      try { localStorage.setItem(KEY, '1'); } catch(e){}
+      banner.style.display = 'none';
+    });
+    btn.addEventListener('mouseover', function(){ btn.style.background = '#E2CFA3'; });
+    btn.addEventListener('mouseout',  function(){ btn.style.background = '#C9A86A'; });
+  })();
+</script>
+
+</body>
+</html>

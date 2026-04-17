@@ -1,0 +1,13 @@
+# Large originals — keep optimized JPGs only
+*.png
+*.PNG
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Non-web deliverables (keep in local folder, not in repo)
+*.docx
+*.xlsx
+*.pptx
