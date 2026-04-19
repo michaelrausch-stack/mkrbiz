@@ -169,6 +169,23 @@
     transition: all 0.25s;
   }
   .nav-mobile-menu .mobile-cta:hover { background: var(--gold); color: var(--ink); }
+  .mobile-lang {
+    margin-top: 12px;
+    padding-top: 18px;
+    border-top: 1px solid rgba(201, 168, 106, 0.2);
+    font-size: 0.82rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    text-align: center;
+  }
+  .mobile-lang .active { color: var(--gold); }
+  .mobile-lang a {
+    color: var(--text-muted);
+    margin: 0 6px;
+    transition: color 0.2s;
+  }
+  .mobile-lang a:hover { color: var(--gold); }
   @media (max-width: 860px) {
     .nav-links { display: none; }
     .nav-cta { display: none; }
@@ -953,6 +970,9 @@
     <a href="#methode" onclick="document.getElementById('mobile-menu').classList.remove('open');document.querySelector('.nav-toggle').classList.remove('open')">Méthode</a>
     <a href="#temoignages" onclick="document.getElementById('mobile-menu').classList.remove('open');document.querySelector('.nav-toggle').classList.remove('open')">Témoignages</a>
     <a class="mobile-cta" href="#rdv" onclick="document.getElementById('mobile-menu').classList.remove('open');document.querySelector('.nav-toggle').classList.remove('open')">Entretien découverte</a>
+    <div class="mobile-lang">
+      <span class="active">FR</span>·<a href="en.html">EN</a>·<a href="https://sites.google.com/mkrbiz.coach/sites/idiomas" target="_blank" rel="noopener noreferrer">DE</a>·<a href="https://sites.google.com/mkrbiz.coach/sites/idiomas" target="_blank" rel="noopener noreferrer">ES</a>
+    </div>
   </div>
 </nav>
 
