@@ -113,9 +113,67 @@
     transition: color .18s ease;
   }
   .lang a:hover { color: var(--gold); }
+  /* --- Mobile nav hamburger --- */
+  .nav-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .nav-toggle span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background: var(--cream);
+    transition: transform 0.3s, opacity 0.3s;
+  }
+  .nav-toggle.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+  .nav-toggle.open span:nth-child(2) { opacity: 0; }
+  .nav-toggle.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+  .nav-mobile-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: rgba(11, 22, 35, 0.97);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(201, 168, 106, 0.2);
+    padding: 24px;
+    flex-direction: column;
+    gap: 18px;
+    font-size: 1rem;
+    color: var(--text-light);
+  }
+  .nav-mobile-menu.open { display: flex; }
+  .nav-mobile-menu a {
+    color: var(--text-light);
+    transition: color 0.2s;
+    padding: 6px 0;
+  }
+  .nav-mobile-menu a:hover { color: var(--gold-soft); }
+  .nav-mobile-menu .mobile-cta {
+    display: inline-block;
+    margin-top: 8px;
+    padding: 12px 20px;
+    border: 1px solid var(--gold);
+    color: var(--gold-soft);
+    font-weight: 500;
+    letter-spacing: 0.03em;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    text-align: center;
+    transition: all 0.25s;
+  }
+  .nav-mobile-menu .mobile-cta:hover { background: var(--gold); color: var(--ink); }
   @media (max-width: 860px) {
     .nav-links { display: none; }
     .nav-cta { display: none; }
+    .nav-toggle { display: flex; }
+    .nav { position: relative; }
   }
 
   /* ---------- HERO ---------- */
@@ -222,8 +280,19 @@
     pointer-events: none;
   }
   @media (max-width: 860px) {
-    .hero-inner { grid-template-columns: 1fr; gap: 50px; }
-    .portrait { max-width: 320px; margin: 0 auto; }
+    .hero { padding: 60px 0 50px; }
+    .hero-inner { grid-template-columns: 1fr; gap: 32px; }
+    .hero h1 { font-size: 2rem; margin-bottom: 18px; }
+    .hero-sub { font-size: 1rem; margin-bottom: 28px; line-height: 1.55; }
+    .btn { padding: 14px 26px; font-size: 0.84rem; }
+    .portrait {
+      max-width: 240px;
+      min-height: 300px;
+      margin: 0 auto;
+      aspect-ratio: 3 / 4;
+      background-position: center 15%;
+      border-radius: 4px;
+    }
   }
 
   /* ---------- TRUST BAR ---------- */
@@ -312,9 +381,15 @@
     display: inline-block;
   }
   @media (max-width: 760px) {
+    .trust-bar { padding: 24px 0; }
+    .trust-inner { gap: 16px; justify-content: center; }
     .trust-sep { display: none; }
-    .trust-languages { flex-wrap: wrap; gap: 8px; }
-    .trust-languages-label { font-size: 0.72rem; letter-spacing: 0.12em; }
+    .trust-item { min-width: auto; gap: 2px; }
+    .trust-num { font-size: 1.7rem; }
+    .trust-label { font-size: 0.68rem; letter-spacing: 0.1em; }
+    .trust-badge { font-size: 0.7rem; padding: 0 10px; height: 1.8rem; }
+    .trust-languages { flex-wrap: wrap; gap: 8px; margin-top: 18px; padding-top: 16px; }
+    .trust-languages-label { font-size: 0.68rem; letter-spacing: 0.1em; }
   }
 
   /* ---------- SECTION ---------- */
@@ -860,6 +935,17 @@
       <span class="lang"><a href="index.html" title="Version française">FR</a>·<span class="active">EN</span>·<a href="https://sites.google.com/mkrbiz.coach/sites/idiomas" target="_blank" rel="noopener noreferrer" title="Deutsche Version (temporär)">DE</a>·<a href="https://sites.google.com/mkrbiz.coach/sites/idiomas" target="_blank" rel="noopener noreferrer" title="Versión en español (temporal)">ES</a></span>
     </div>
     <a class="nav-cta" href="#book">Discovery session</a>
+    <button class="nav-toggle" aria-label="Menu" onclick="this.classList.toggle('open');document.getElementById('mobile-menu').classList.toggle('open')">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="nav-mobile-menu" id="mobile-menu">
+    <a href="#who-its-for" onclick="document.getElementById('mobile-menu').classList.remove('open');document.querySelector('.nav-toggle').classList.remove('open')">Who it's for</a>
+    <a href="#about" onclick="document.getElementById('mobile-menu').classList.remove('open');document.querySelector('.nav-toggle').classList.remove('open')">About</a>
+    <a href="#services" onclick="document.getElementById('mobile-menu').classList.remove('open');document.querySelector('.nav-toggle').classList.remove('open')">Services</a>
+    <a href="#method" onclick="document.getElementById('mobile-menu').classList.remove('open');document.querySelector('.nav-toggle').classList.remove('open')">Method</a>
+    <a href="#testimonials" onclick="document.getElementById('mobile-menu').classList.remove('open');document.querySelector('.nav-toggle').classList.remove('open')">Testimonials</a>
+    <a class="mobile-cta" href="#book" onclick="document.getElementById('mobile-menu').classList.remove('open');document.querySelector('.nav-toggle').classList.remove('open')">Discovery session</a>
   </div>
 </nav>
 
