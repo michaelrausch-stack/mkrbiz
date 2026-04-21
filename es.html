@@ -1,10 +1,10 @@
 <!doctype html>
-<html lang="fr">
+<html lang="es">
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Maikel Rausch — Coaching & Mentoring de dirigeants | Paris, Genève, Bruxelles</title>
-<meta name="description" content="Coaching exécutif et mentoring pour dirigeants, cadres et entrepreneurs. 20 ans en management international (Avaya, Bosch), coach certifié Co-Active / ICF. Entretien découverte confidentiel." />
+<title>Maikel Rausch — Executive Coaching & Mentoring | España y Europa</title>
+<meta name="description" content="Coaching ejecutivo y mentoring para líderes, directivos y emprendedores. Más de 20 años en dirección internacional (Avaya, Bosch), coach Co-Active certificado ICF. Sesión de descubrimiento confidencial." />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -76,13 +76,14 @@
     font-weight: 600;
     color: var(--cream);
     letter-spacing: 0.02em;
+    white-space: nowrap;
   }
   .brand .dot { color: var(--gold); }
   .nav-links {
     display: flex;
-    gap: 32px;
+    gap: 28px;
     align-items: center;
-    font-size: 0.92rem;
+    font-size: 0.88rem;
     color: var(--text-light);
   }
   .nav-links a { transition: color .2s; }
@@ -321,10 +322,9 @@
     color: var(--text-light);
   }
   .trust-inner {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr auto 1fr;
     align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
     gap: 24px;
     max-width: 960px;
     margin: 0 auto;
@@ -334,7 +334,6 @@
     flex-direction: column;
     align-items: center;
     gap: 4px;
-    min-width: 140px;
     text-align: center;
   }
   .trust-num {
@@ -386,13 +385,6 @@
   }
   .trust-languages:hover { color: var(--gold-soft); }
   .trust-languages:hover .trust-languages-arrow { transform: translate(2px, -2px); }
-  .trust-languages-num {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 1.5rem;
-    color: var(--gold);
-    font-weight: 500;
-    line-height: 1;
-  }
   .trust-languages-label {
     font-size: 0.76rem;
     letter-spacing: 0.15em;
@@ -406,7 +398,7 @@
   }
   @media (max-width: 760px) {
     .trust-bar { padding: 24px 0; }
-    .trust-inner { gap: 16px; justify-content: center; }
+    .trust-inner { display: flex; flex-wrap: wrap; gap: 16px; justify-content: center; }
     .trust-sep { display: none; }
     .trust-item { min-width: auto; gap: 2px; }
     .trust-num { font-size: 1.7rem; }
@@ -526,7 +518,7 @@
   .services .lead { color: var(--text-light); opacity: 0.85; }
   .svc-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 28px;
     margin-top: 60px;
   }
@@ -642,7 +634,7 @@
   .process { background: var(--off-white); }
   .process-steps {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 32px;
     margin-top: 70px;
     position: relative;
@@ -951,27 +943,27 @@
   <div class="nav-inner">
     <a class="brand" href="#">Maikel Rausch<span class="dot">.</span></a>
     <div class="nav-links">
-      <a href="#pour-qui">Pour qui</a>
-      <a href="#a-propos">À propos</a>
-      <a href="#services">Accompagnements</a>
-      <a href="#methode">Méthode</a>
-      <a href="#temoignages">Témoignages</a>
-      <span class="lang"><span class="active">FR</span>·<a href="en.html" title="English version">EN</a>·<a href="https://sites.google.com/mkrbiz.coach/sites/idiomas" target="_blank" rel="noopener noreferrer" title="Deutsche Version (temporär)">DE</a>·<a href="es.html" title="Versión en español">ES</a></span>
+      <a href="#para-quien">¿Para quién?</a>
+      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#metodo">Método</a>
+      <a href="#testimonios">Clientes</a>
+      <span class="lang"><a href="index.html" title="Version française">FR</a>·<a href="en.html" title="English version">EN</a>·<a href="https://sites.google.com/mkrbiz.coach/sites/idiomas" target="_blank" rel="noopener noreferrer" title="Deutsche Version (temporär)">DE</a>·<span class="active">ES</span></span>
     </div>
-    <a class="nav-cta" href="#rdv">Entretien découverte</a>
-    <button class="nav-toggle" aria-label="Menu" onclick="this.classList.toggle('open');document.getElementById('mobile-menu').classList.toggle('open')">
+    <a class="nav-cta" href="#reservar">Sesión gratuita</a>
+    <button class="nav-toggle" aria-label="Menú" onclick="this.classList.toggle('open');document.getElementById('mobile-menu').classList.toggle('open')">
       <span></span><span></span><span></span>
     </button>
   </div>
   <div class="nav-mobile-menu" id="mobile-menu">
-    <a href="#pour-qui" onclick="document.getElementById('mobile-menu').classList.remove('open');document.querySelector('.nav-toggle').classList.remove('open')">Pour qui</a>
-    <a href="#a-propos" onclick="document.getElementById('mobile-menu').classList.remove('open');document.querySelector('.nav-toggle').classList.remove('open')">À propos</a>
-    <a href="#services" onclick="document.getElementById('mobile-menu').classList.remove('open');document.querySelector('.nav-toggle').classList.remove('open')">Accompagnements</a>
-    <a href="#methode" onclick="document.getElementById('mobile-menu').classList.remove('open');document.querySelector('.nav-toggle').classList.remove('open')">Méthode</a>
-    <a href="#temoignages" onclick="document.getElementById('mobile-menu').classList.remove('open');document.querySelector('.nav-toggle').classList.remove('open')">Témoignages</a>
-    <a class="mobile-cta" href="#rdv" onclick="document.getElementById('mobile-menu').classList.remove('open');document.querySelector('.nav-toggle').classList.remove('open')">Entretien découverte</a>
+    <a href="#para-quien" onclick="document.getElementById('mobile-menu').classList.remove('open');document.querySelector('.nav-toggle').classList.remove('open')">Para quién</a>
+    <a href="#sobre-mi" onclick="document.getElementById('mobile-menu').classList.remove('open');document.querySelector('.nav-toggle').classList.remove('open')">Sobre mí</a>
+    <a href="#servicios" onclick="document.getElementById('mobile-menu').classList.remove('open');document.querySelector('.nav-toggle').classList.remove('open')">Servicios</a>
+    <a href="#metodo" onclick="document.getElementById('mobile-menu').classList.remove('open');document.querySelector('.nav-toggle').classList.remove('open')">Método</a>
+    <a href="#testimonios" onclick="document.getElementById('mobile-menu').classList.remove('open');document.querySelector('.nav-toggle').classList.remove('open')">Testimonios</a>
+    <a class="mobile-cta" href="#reservar" onclick="document.getElementById('mobile-menu').classList.remove('open');document.querySelector('.nav-toggle').classList.remove('open')">Sesión gratuita</a>
     <div class="mobile-lang">
-      <span class="active">FR</span>·<a href="en.html">EN</a>·<a href="https://sites.google.com/mkrbiz.coach/sites/idiomas" target="_blank" rel="noopener noreferrer">DE</a>·<a href="es.html">ES</a>
+      <a href="index.html">FR</a>·<a href="en.html">EN</a>·<a href="https://sites.google.com/mkrbiz.coach/sites/idiomas" target="_blank" rel="noopener noreferrer">DE</a>·<span class="active">ES</span>
     </div>
   </div>
 </nav>
@@ -980,14 +972,14 @@
 <header class="hero">
   <div class="container hero-inner">
     <div>
-      <div class="eyebrow">Coaching & mentoring de dirigeants</div>
-      <h1>Retrouver de la clarté, de la puissance et du <em>sens</em> dans l'exercice du pouvoir.</h1>
+      <div class="eyebrow">Coaching ejecutivo & mentoring</div>
+      <h1>Liderazgo con impacto: decide con claridad, gestiona con <em>confianza.</em></h1>
       <p class="hero-sub">
-        Accompagnement confidentiel, sur-mesure, pour dirigeants, cadres dirigeants et fondateurs qui veulent prendre des décisions justes, incarner un leadership durable et retrouver leur souffle. En présentiel à Paris, Bruxelles, Genève — ou en visio partout en Europe.
+        Sparring estratégico y confidencial para directivos y líderes que quieren decidir mejor, liderar con más impacto y reencontrar su equilibrio. En persona en España — o en línea.
       </p>
       <div class="cta-row">
-        <a class="btn btn-primary" href="#rdv">Demander un entretien confidentiel</a>
-        <a class="btn btn-ghost" href="#services">Découvrir les accompagnements</a>
+        <a class="btn btn-primary" href="#reservar">Reserva tu sesión gratuita</a>
+        <a class="btn btn-ghost" href="#servicios">Explorar servicios</a>
       </div>
     </div>
     <div class="portrait"></div>
@@ -1000,300 +992,285 @@
     <div class="trust-inner">
       <div class="trust-item">
         <div class="trust-num">20+</div>
-        <div class="trust-label">ans en management international</div>
+        <div class="trust-label">Años en dirección internacional</div>
       </div>
       <div class="trust-sep"></div>
       <div class="trust-item">
         <div class="trust-badge">ICF · Co-Active</div>
-        <div class="trust-label">Coaching exécutif certifié</div>
+        <div class="trust-label">Coach ejecutivo certificado</div>
       </div>
       <div class="trust-sep"></div>
       <div class="trust-item">
         <div class="trust-badge">Mentorday</div>
-        <div class="trust-label">Mentorat start-up</div>
+        <div class="trust-label">Mentoring de emprendedores</div>
       </div>
     </div>
-    <a class="trust-languages" href="https://sites.google.com/mkrbiz.coach/sites/idiomas" target="_blank" rel="noopener noreferrer" title="Accéder aux sites en EN · DE · ES">
-      <span class="trust-languages-label">Langues de travail — FR · EN · DE · ES</span>
-      <span class="trust-languages-arrow" aria-hidden="true">↗</span>
-    </a>
+    <div class="trust-languages" style="cursor:default;">
+      <span class="trust-languages-label">Idiomas de trabajo — EN · FR · DE · ES</span>
+    </div>
   </div>
 </section>
 
-<!-- ========================= FOR WHOM ========================= -->
-<section class="for-whom" id="pour-qui">
+<!-- ========================= PARA QUIÉN ========================= -->
+<section class="for-whom" id="para-quien">
   <div class="container">
-    <div class="section-eyebrow">Pour qui</div>
-    <h2>Aux dirigeants qui portent beaucoup — et qui veulent porter autrement.</h2>
+    <div class="section-eyebrow">Para quién</div>
+    <h2>¿Te sientes identificado con esto?</h2>
     <p class="lead">
-      Vous avez réussi. Vous avez gravi les échelons, pris des responsabilités, livré des résultats. Et aujourd'hui, quelque chose appelle un ajustement : une décision à prendre, une posture à retrouver, un virage à négocier. Vous n'avez pas besoin d'un énième outil — vous avez besoin d'un espace pour penser clair.
+      Tienes el cargo, los resultados, el reconocimiento. Pero algo no encaja. Quizá es una decisión que no logras resolver, un rol que ya no se ajusta como antes, o una transición que exige más de lo que la experiencia sola puede ofrecer. No necesitas otro framework — necesitas espacio para pensar con claridad.
     </p>
     <div class="whom-grid">
       <div class="whom-card">
-        <h3>Dirigeants</h3>
-        <h4>La solitude du sommet</h4>
-        <p>CEO, dirigeants d'unité, fondateurs. Vous portez la stratégie et la cohésion — mais vous avez peu d'endroits où penser à voix haute, sans agenda caché.</p>
+        <h3>Éxito externo, vacío interno</h3>
+        <h4>El síndrome del impostor</h4>
+        <p>Todo el mundo cree que lo tienes controlado — pero por dentro, las dudas no paran. El síndrome del impostor no discrimina por nivel jerárquico. Un espacio confidencial para explorar lo que realmente ocurre marca la diferencia.</p>
       </div>
       <div class="whom-card">
-        <h3>Cadres dirigeants</h3>
-        <h4>Prise de poste, changement d'échelle</h4>
-        <p>Nouveau rôle, nouveau périmètre, nouvelle organisation. Les 90 premiers jours fixent l'impression durable. Structurer l'entrée vaut mieux que la rattraper.</p>
+        <h3>La soledad del líder</h3>
+        <h4>Cuando no puedes hablar con nadie</h4>
+        <p>Cuanto más subes, menos personas entienden tu realidad. Las decisiones pesan más y los interlocutores de confianza escasean. El coaching te ofrece un interlocutor sin agenda, sin juicio, con experiencia real.</p>
       </div>
       <div class="whom-card">
-        <h3>Entrepreneurs</h3>
-        <h4>Passer de l'exécution au leadership</h4>
-        <p>Votre entreprise grandit plus vite que votre posture. Déléguer, lâcher, incarner : le travail n'est plus le même. L'accompagnement vous aide à faire le pas.</p>
+        <h3>Liderazgo y personas</h3>
+        <h4>La inteligencia emocional como ventaja</h4>
+        <p>La técnica te trajo hasta aquí. Lo que te llevará al siguiente nivel es gestionar personas, conflictos y comunicación con inteligencia emocional. No es debilidad — es tu mayor ventaja competitiva.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ========================= ABOUT ========================= -->
-<section class="about" id="a-propos">
+<!-- ========================= SOBRE MÍ ========================= -->
+<section class="about" id="sobre-mi">
   <div class="container about-inner">
     <div class="about-portrait">
-      <div class="role">Votre coach</div>
+      <div class="role">Tu coach</div>
       <div class="name">Maikel Rausch</div>
     </div>
     <div>
-      <div class="section-eyebrow">Parcours</div>
-      <h2>Vingt ans à diriger. Puis le choix de transmettre.</h2>
+      <div class="section-eyebrow">Trayectoria</div>
+      <h2>Metodología alemana, empatía latina.</h2>
       <p>
-        Pendant plus de vingt ans, j'ai occupé des postes de direction — directeur d'unité d'affaires, directeur du contrôle de gestion, directeur marketing, directeur commercial — au sein de grands groupes internationaux comme Avaya et Bosch, en France et à l'étranger. J'y ai connu les décisions qui pèsent, les arbitrages que personne ne voit, la responsabilité des équipes qu'on fait avancer.
+        Durante más de veinte años, ocupé puestos de alta dirección — director de unidad de negocio, director de controlling, director comercial, director de marketing — en multinacionales como Avaya, Bosch, Lidl y Siemens, en varios países. Sé lo que significa cargar con decisiones que nadie más ve, dirigir equipos en la ambigüedad y rendir bajo una presión que nunca se apaga.
       </p>
       <p>
-        Puis j'ai fait le choix d'accompagner des PME et des start-ups comme consultant et mentor — et c'est là que j'ai compris que ma vraie vocation n'était pas de dire aux dirigeants ce qu'il fallait faire, mais de les aider à trouver ce qu'ils savaient déjà. Je me suis alors formé au coaching Co-Active selon les standards les plus exigeants du secteur — ceux de l'<strong>International Coach Federation (ICF)</strong>, les seuls reconnus par la Harvard Business School — et je suis aujourd'hui membre de l'ICF et de l'accélérateur Mentorday.
+        Después tomé una decisión deliberada. Empecé a asesorar y mentorizar pymes y start-ups — y descubrí que mi verdadera vocación no era decirle a los líderes lo que tenían que hacer, sino ayudarles a encontrar lo que ya sabían. Me formé en coaching Co-Active siguiendo los estándares más exigentes de la profesión — los de la <strong>International Coach Federation (ICF)</strong>, el único marco avalado por Harvard Business School — y soy miembro de la ICF y de la red de aceleración Mentorday.
       </p>
       <p>
-        Depuis, j'ai accompagné plus de <strong>150 parcours</strong> — de dirigeants en grands groupes à fondateurs d'entreprise, en passant par des cadres et professionnels à un moment charnière de leur carrière.
+        Desde entonces, he acompañado más de <strong>150 procesos de coaching</strong> — desde ejecutivos de multinacionales hasta fundadores primerizos y profesionales senior en un momento crucial de su carrera.
       </p>
       <p>
-        Je travaille en français, anglais, allemand et espagnol, en présentiel à Paris, Bruxelles et Genève ou en visio dans toute l'Europe.
+        Mi enfoque combina la metodología pragmática alemana con la flexibilidad necesaria para tu realidad. No es "terapia" — es estrategia de alto rendimiento. Trabajo en español, inglés, francés y alemán. En persona en España y Europa — o en línea, estés donde estés.
       </p>
       <div class="sig">— Maikel</div>
     </div>
   </div>
 </section>
 
-<!-- ========================= SERVICES ========================= -->
-<section class="services" id="services">
+<!-- ========================= SERVICIOS ========================= -->
+<section class="services" id="servicios">
   <div class="container">
-    <div class="section-eyebrow">Accompagnements</div>
-    <h2>Trois façons de travailler ensemble.</h2>
-    <p class="lead">Chaque accompagnement est entièrement sur-mesure. Le cadre, lui, est clair : des objectifs co-construits, des séances espacées, un engagement de confidentialité absolue.</p>
+    <div class="section-eyebrow">Servicios</div>
+    <h2>¿Cómo podemos trabajar juntos?</h2>
+    <p class="lead">Cada proceso es completamente a medida. El marco, sin embargo, es claro: objetivos co-definidos, sesiones estructuradas y un compromiso absoluto con la confidencialidad.</p>
 
     <div class="svc-grid">
       <div class="svc-card">
-        <div class="num">I.</div>
-        <h4>Coaching de dirigeant</h4>
-        <p>Un accompagnement individuel pour dirigeants et cadres dirigeants qui veulent clarifier une décision, retrouver leur posture, ou traverser un moment charnière — fusion, réorganisation, prise de poste, plafond de verre.</p>
+        <div class="num">A.</div>
+        <h4>El Programa Completo</h4>
+        <p>Coaching ejecutivo 1:1 para líderes y directivos que necesitan clarificar una decisión, recuperar su presencia o navegar una transición de alto impacto. Un proceso estructurado de 3 a 6 meses con acompañamiento continuo.</p>
         <ul>
-          <li>8 à 12 séances</li>
-          <li>Rythme bi-mensuel</li>
-          <li>Présentiel ou visio</li>
-          <li>Confidentialité absolue</li>
+          <li>3 a 6 meses de duración</li>
+          <li>Sesiones quincenales 1:1</li>
+          <li>Acceso por WhatsApp y email entre sesiones</li>
+          <li>En persona o en línea</li>
+          <li>Confidencialidad absoluta</li>
         </ul>
       </div>
       <div class="svc-card">
-        <div class="num">II.</div>
-        <h4>Mentoring entrepreneurial</h4>
-        <p>Pour fondateurs et dirigeants de PME qui veulent un regard expérimenté sur leurs choix stratégiques, leur modèle, leur gouvernance. Un mélange de coaching et de retour d'expérience terrain.</p>
+        <div class="num">B.</div>
+        <h4>La Intervención Puntual</h4>
+        <p>Una sesión intensiva de 90 a 120 minutos para abordar un tema concreto con profundidad: una decisión difícil, un conflicto con un compañero, una presentación crucial, o simplemente la necesidad de pensar en voz alta con alguien que entiende tu realidad.</p>
         <ul>
-          <li>6 à 10 séances</li>
-          <li>Rythme mensuel</li>
-          <li>Format libre selon vos enjeux</li>
-          <li>Accès entre les séances</li>
-        </ul>
-      </div>
-      <div class="svc-card">
-        <div class="num">III.</div>
-        <h4>Accompagnement 90 jours</h4>
-        <p>Un programme intensif pour structurer une prise de poste ou un changement d'échelle : cadrage de la première semaine, plan des 30/60/90 jours, premières décisions, premières relations.</p>
-        <ul>
-          <li>12 séances sur 3 mois</li>
-          <li>Rythme hebdomadaire</li>
-          <li>Visio possible</li>
-          <li>Livrables partagés</li>
+          <li>Sesión única de 90–120 minutos</li>
+          <li>Inmersión profunda en un tema específico</li>
+          <li>Sin compromiso a largo plazo</li>
+          <li>En persona o en línea</li>
+          <li>Ideal como primer contacto</li>
         </ul>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ========================= METHOD ========================= -->
-<section class="method" id="methode">
+<!-- ========================= MÉTODO ========================= -->
+<section class="method" id="metodo">
   <div class="container method-grid">
     <div>
-      <div class="section-eyebrow">Ma méthode</div>
-      <h2>L'approche Co-Active : penser avec toute la personne.</h2>
+      <div class="section-eyebrow">Mi método</div>
+      <h2>Coaching Co-Active: trabajar con la persona completa.</h2>
       <blockquote>
-        "Mon rôle n'est pas de vous donner des réponses. C'est de vous rendre l'espace, le silence et les bonnes questions pour que les vôtres émergent."
+        "Mi rol no es darte respuestas. Es devolverte el espacio, el silencio y las preguntas correctas — para que las tuyas emerjan."
       </blockquote>
     </div>
     <div class="method-principles">
       <div class="principle">
         <div class="mark">I.</div>
         <div>
-          <h4>Confidentialité absolue</h4>
-          <p>Ce qui se dit en séance n'en sort pas. Pas de rapport à l'entreprise, pas de restitution, pas d'agenda caché.</p>
+          <h4>Confidencialidad absoluta</h4>
+          <p>Lo que se dice en la sesión no sale de la sesión. Sin informes a tu organización, sin debriefs, sin agendas ocultas.</p>
         </div>
       </div>
       <div class="principle">
         <div class="mark">II.</div>
         <div>
-          <h4>Sur-mesure</h4>
-          <p>Aucune grille toute faite. Chaque accompagnement est construit avec vous, en fonction de vos enjeux et de votre rythme.</p>
+          <h4>Totalmente a medida</h4>
+          <p>Sin plantillas prediseñadas. Cada proceso se construye contigo, en torno a tus retos y a tu ritmo.</p>
         </div>
       </div>
       <div class="principle">
         <div class="mark">III.</div>
         <div>
-          <h4>Écoute et bienveillance</h4>
-          <p>Un espace où vous pouvez penser à voix haute — y compris les choses que vous ne dites nulle part ailleurs.</p>
+          <h4>Escucha profunda</h4>
+          <p>Un espacio donde puedes pensar en voz alta — incluyendo lo que no dices en ningún otro lugar.</p>
         </div>
       </div>
       <div class="principle">
         <div class="mark">IV.</div>
         <div>
-          <h4>Performance durable</h4>
-          <p>L'objectif n'est pas une étincelle, c'est un changement qui tient : décisions plus claires, posture plus solide, relations plus justes.</p>
+          <h4>Rendimiento sostenible</h4>
+          <p>El objetivo no es un destello — es un cambio que perdura: decisiones más claras, mayor presencia, relaciones más sólidas.</p>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ========================= PROCESS ========================= -->
+<!-- ========================= PROCESO ========================= -->
 <section class="process">
   <div class="container">
-    <div class="section-eyebrow">Déroulement</div>
-    <h2>Comment se passe un accompagnement.</h2>
-    <p class="lead">Un cadre clair, dès la première prise de contact. Vous savez exactement à quoi vous engager — et à quoi vous n'êtes pas engagé.</p>
+    <div class="section-eyebrow">Cómo funciona</div>
+    <h2>El proceso, paso a paso.</h2>
+    <p class="lead">Un marco claro, desde la primera conversación. Sabes exactamente a qué te comprometes — y a qué no.</p>
 
     <div class="process-steps">
       <div class="step">
         <div class="step-num">01</div>
-        <h4>Entretien découverte</h4>
-        <p>45 minutes, confidentiel, sans engagement. Nous parlons de ce qui vous amène et vous repartez avec une lecture claire, même si nous ne travaillons pas ensemble.</p>
+        <h4>Claridad y desbloqueo</h4>
+        <p>Sesión de descubrimiento gratuita de 45 minutos. Hablamos de lo que te trae aquí. Sales con una lectura clara — trabajes conmigo o no.</p>
       </div>
       <div class="step">
         <div class="step-num">02</div>
-        <h4>Cadrage</h4>
-        <p>Si le courant passe, nous co-construisons vos objectifs, le nombre de séances, la cadence et le format. Le devis est clair et sans surprise.</p>
+        <h4>Estrategia y foco</h4>
+        <p>Si encajamos, co-definimos tus objetivos, el número de sesiones, la cadencia y el formato. La propuesta es clara y transparente.</p>
       </div>
       <div class="step">
         <div class="step-num">03</div>
-        <h4>Accompagnement</h4>
-        <p>Les séances s'enchaînent au rythme convenu, 75 à 90 minutes, en présentiel ou en visio. Entre les séances, un accès direct par e-mail reste possible.</p>
-      </div>
-      <div class="step">
-        <div class="step-num">04</div>
-        <h4>Clôture</h4>
-        <p>Nous faisons le point sur les avancées, nommons ce qui a changé, et vous repartez avec une feuille de route d'ancrage pour les mois qui suivent.</p>
+        <h4>Acción y consolidación</h4>
+        <p>Sesiones a la cadencia acordada, de 75 a 90 minutos, en persona o en línea. Entre sesiones, acceso directo por WhatsApp o email.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ========================= TESTIMONIALS ========================= -->
-<section class="testimonials" id="temoignages">
+<!-- ========================= TESTIMONIOS ========================= -->
+<section class="testimonials" id="testimonios">
   <div class="container">
-    <div class="section-eyebrow">Paroles de clients</div>
-    <h2>Ce que vivent celles et ceux qui ont passé ce cap.</h2>
+    <div class="section-eyebrow">Voces de clientes</div>
+    <h2>Lo que dicen quienes ya dieron el paso.</h2>
 
     <div class="test-grid">
       <div class="test-card">
-        <p class="test-title">Une rencontre précieuse.</p>
-        <p>Trouver la bonne personne sur internet n'est pas simple — Maikel a été une rencontre précieuse. Il m'a fait découvrir des méthodes qui ont transformé ma perspective et considérablement accéléré mon développement. J'aborde aujourd'hui ma carrière avec une image de moi profondément renouvelée et une motivation fraîche, pour atteindre mes objectifs authentiques. Maikel a toujours mis le doigt juste et m'a conforté dans cette évolution.</p>
+        <p class="test-title">Un hallazgo realmente valioso.</p>
+        <p>Encontrar a la persona adecuada en internet no es fácil — Maikel fue un verdadero descubrimiento. Me mostró métodos que cambiaron mi perspectiva y aceleraron mi crecimiento de forma espectacular. Hoy afronto mi carrera con una imagen renovada de mí mismo y una motivación fresca para perseguir mis auténticos objetivos.</p>
         <div class="test-meta">
           <div class="test-avatar">
             UM
-            <img src="img/testimonials/uwe-meyer.jpg" alt="Portrait d'Uwe Meyer" loading="lazy" onerror="this.style.display='none'">
+            <img src="img/testimonials/uwe-meyer.jpg" alt="Retrato de Uwe Meyer" loading="lazy" onerror="this.style.display='none'">
           </div>
           <div>
             <p class="test-name">Uwe Meyer</p>
-            <p class="test-role">Responsable Chine, COBER Industrial Service — Francfort</p>
+            <p class="test-role">Coordinador Negocio China, COBER — Frankfurt</p>
           </div>
         </div>
       </div>
       <div class="test-card">
-        <p class="test-title">Empathie, confiance, outils qui fonctionnent.</p>
-        <p>Le parcours avec Maikel a été fait de progression, de focus et de redéfinition de soi. Il m'a aidée à rompre d'anciens conditionnements, à lâcher prise et à faire face à mes peurs. Merci, Maikel, pour ce nouveau départ. Je le recommande à 100 % — il conjugue l'empathie et la confiance avec les bons outils et un véritable engagement envers son client.</p>
+        <p class="test-title">Empatía, confianza y herramientas que funcionan.</p>
+        <p>El camino con Maikel estuvo marcado por el progreso, el enfoque y el redescubrimiento de quién soy. Me ayudó a romper condicionamientos antiguos, soltar y enfrentar mis miedos. Gracias, Maikel, por este nuevo comienzo. Lo recomiendo sin reservas — combina empatía y confianza con las herramientas adecuadas.</p>
         <div class="test-meta">
           <div class="test-avatar">
             AR
-            <img src="img/testimonials/antonia-romero.jpg" alt="Portrait d'Antonia Romero" loading="lazy" onerror="this.style.display='none'">
+            <img src="img/testimonials/antonia-romero.jpg" alt="Retrato de Antonia Romero" loading="lazy" onerror="this.style.display='none'">
           </div>
           <div>
             <p class="test-name">Antonia Romero</p>
-            <p class="test-role">Contrôleuse de gestion, Telefónica — Madrid</p>
+            <p class="test-role">Controller Económico, Telefónica — Madrid</p>
           </div>
         </div>
       </div>
       <div class="test-card">
-        <p class="test-title">Comme un GPS pour ma communication.</p>
-        <p>Le coaching a été un véritable système de navigation pour ma communication — au travail comme dans ma vie personnelle. Avec l'aide de Maikel, j'ai franchi des barrières dont je n'avais même pas conscience. Au bureau, je fais passer mes idées plus clairement et je comprends mieux mes collègues. À la maison, je traverse les conflits avec plus d'assurance. Merci pour la guidance — et pour les éclats de rire en chemin.</p>
+        <p class="test-title">Un sparring que te cambia la perspectiva.</p>
+        <p>Trabajar con Maikel es como tener un aliado estratégico que entiende tu mundo. Me ayudó a ver con claridad lo que no podía ver solo, a gestionar mejor mis equipos y a tomar decisiones con más seguridad. Su combinación de experiencia corporativa real y formación en coaching hace toda la diferencia.</p>
         <div class="test-meta">
           <div class="test-avatar">
-            CF
-            <img src="img/testimonials/claudia-favard.jpg" alt="Portrait de Claudia Favard" loading="lazy" onerror="this.style.display='none'">
+            SP
+            <img src="img/testimonials/santiago.jpg" alt="Retrato de Santiago Pereira" loading="lazy" onerror="this.style.display='none'">
           </div>
           <div>
-            <p class="test-name">Claudia Favard</p>
-            <p class="test-role">Entrepreneure — Aix-la-Chapelle</p>
+            <p class="test-name">Santiago Pereira Adán</p>
+            <p class="test-role">Comercial Interno, Sonepar — Lugo</p>
           </div>
         </div>
       </div>
     </div>
-    <p style="margin-top: 40px; font-size: 0.88rem; color: var(--text-subtle); font-style: italic;">Témoignages publiés avec l'accord explicite des personnes citées. Références supplémentaires disponibles sur demande dans un cadre confidentiel.</p>
+    <p style="margin-top: 40px; font-size: 0.88rem; color: var(--text-subtle); font-style: italic;">Testimonios publicados con el consentimiento explícito de los citados. Referencias adicionales disponibles bajo petición en un entorno confidencial.</p>
   </div>
 </section>
 
 <!-- ========================= FAQ ========================= -->
 <section class="faq">
   <div class="container">
-    <div class="section-eyebrow">Questions fréquentes</div>
-    <h2>Avant de prendre contact.</h2>
+    <div class="section-eyebrow">Preguntas frecuentes</div>
+    <h2>Antes de dar el paso.</h2>
 
     <div class="faq-list">
       <details>
-        <summary>Quelle est la différence entre coaching et thérapie ?</summary>
-        <p>Le coaching travaille sur le présent et le futur : décisions, posture, leadership, performance durable. La thérapie travaille sur le passé et la souffrance. Si votre besoin relève de la seconde, je vous orienterai vers un professionnel compétent — c'est un principe déontologique de l'ICF.</p>
+        <summary>¿Cuál es la diferencia entre coaching y terapia?</summary>
+        <p>El coaching trabaja sobre el presente y el futuro: decisiones, presencia de liderazgo, rendimiento sostenible. La terapia trabaja sobre el pasado y el sufrimiento emocional. Si tus necesidades son del segundo tipo, te derivaré a un profesional cualificado — es un principio ético fundamental de la ICF.</p>
       </details>
       <details>
-        <summary>Combien de séances faut-il prévoir ?</summary>
-        <p>Un accompagnement classique comporte 8 à 12 séances, espacées de deux semaines. L'accompagnement 90 jours est plus intensif (12 séances hebdomadaires sur 3 mois). La durée est fixée d'un commun accord lors du cadrage — rien n'est imposé.</p>
+        <summary>¿Cuántas sesiones necesito?</summary>
+        <p>El Programa Completo suele durar entre 3 y 6 meses con sesiones quincenales. La Intervención Puntual es una sesión única de 90–120 minutos. La duración se acuerda juntos durante la fase de definición; nada se impone.</p>
       </details>
       <details>
-        <summary>Comment se passe la confidentialité ?</summary>
-        <p>Rigoureuse et absolue. Ce qui se dit en séance ne sort pas de la séance. Si votre entreprise finance l'accompagnement, un cadre tripartite est posé dès le départ — objectifs partagés, contenu strictement confidentiel.</p>
+        <summary>¿Cómo funciona la confidencialidad?</summary>
+        <p>De forma rigurosa y absoluta. Lo que se dice en la sesión no sale de la sesión. Si tu organización patrocina el proceso, se establece un marco tripartito desde el inicio — objetivos compartidos, contenido estrictamente confidencial.</p>
       </details>
       <details>
-        <summary>Présentiel ou visio ?</summary>
-        <p>Les deux formats donnent d'excellents résultats. Le présentiel est disponible à Paris, Bruxelles et Genève selon les périodes. La visio me permet d'accompagner des dirigeants dans toute l'Europe et au-delà, en français, anglais, allemand ou espagnol.</p>
+        <summary>¿Presencial u online?</summary>
+        <p>Ambos formatos ofrecen resultados excelentes. Las sesiones presenciales están disponibles en España y puntos clave de Europa. Las sesiones online me permiten trabajar con líderes en toda Europa y más allá — en español, inglés, francés o alemán.</p>
       </details>
       <details>
-        <summary>Qu'est-ce que le coaching Co-Active ?</summary>
-        <p>Une approche reconnue par l'International Coach Federation qui considère la personne dans sa globalité — pas seulement les objectifs, mais aussi les valeurs, les équilibres, le sens. C'est une méthode exigeante et particulièrement adaptée aux dirigeants qui veulent des résultats durables, pas des solutions cosmétiques.</p>
+        <summary>¿Qué es el coaching Co-Active?</summary>
+        <p>Un enfoque reconocido por la International Coach Federation que considera a la persona completa — no solo los objetivos, sino también los valores, el equilibrio y el propósito. Es un método riguroso, especialmente indicado para líderes que quieren resultados duraderos, no parches cosméticos.</p>
       </details>
       <details>
-        <summary>Quels sont les tarifs ?</summary>
-        <p>Les honoraires sont présentés lors de l'entretien découverte, en fonction du format retenu et du nombre de séances. L'entretien découverte lui-même est sans engagement et sans frais.</p>
+        <summary>¿Cuáles son los honorarios?</summary>
+        <p>Los honorarios se presentan durante la sesión de descubrimiento, en función del formato y número de sesiones. La sesión de descubrimiento es sin compromiso y gratuita.</p>
       </details>
     </div>
   </div>
 </section>
 
 <!-- ========================= FINAL CTA ========================= -->
-<section class="final-cta" id="rdv">
+<section class="final-cta" id="reservar">
   <div class="container">
-    <h2>45 minutes, confidentielles, <em>sans engagement.</em></h2>
-    <p>Un entretien découverte pour parler de ce qui vous amène, voir si le courant passe, et repartir avec une lecture claire — que nous travaillions ensemble ou non.</p>
-    <a class="btn btn-primary" href="https://calendly.com/michael-rausch-mkrbiz/30min" target="_blank" rel="noopener noreferrer" onclick="return openCalendly(event)">Réserver un entretien découverte</a>
-    <span class="final-note">45 min · confidentiel · sans engagement</span>
+    <h2>45 minutos, confidencial, <em>sin compromiso.</em></h2>
+    <p>Una sesión de descubrimiento para hablar de lo que te trae aquí, ver si hay encaje y salir con una perspectiva clara — trabajes conmigo o no.</p>
+    <a class="btn btn-primary" href="https://calendly.com/michael-rausch-mkrbiz/30min" target="_blank" rel="noopener noreferrer" onclick="return openCalendly(event)">Reserva tu sesión gratuita</a>
+    <span class="final-note">45 min · confidencial · sin compromiso</span>
     <a class="cta-whatsapp" href="https://wa.me/message/23AR7P2DT3ZFF1" target="_blank" rel="noopener noreferrer">
       <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12.05 21.785h-.01a9.84 9.84 0 0 1-5.014-1.373l-.36-.214-3.73.978.996-3.635-.235-.374A9.86 9.86 0 0 1 2.19 12.05c0-5.437 4.424-9.86 9.87-9.86a9.82 9.82 0 0 1 6.98 2.892 9.82 9.82 0 0 1 2.893 6.98c-.004 5.444-4.428 9.87-9.87 9.87l-.013-.002zm8.413-18.226A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c-.001 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.88 11.88 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.82 11.82 0 0 0-3.48-8.413z"/></svg>
-      Ou échangeons sur WhatsApp
+      O escríbeme por WhatsApp
     </a>
   </div>
 </section>
@@ -1304,51 +1281,50 @@
     <div class="foot-grid">
       <div>
         <div class="foot-brand">Maikel Rausch<span class="dot">.</span></div>
-        <p class="foot-tag">Coaching & mentoring confidentiels pour dirigeants, cadres dirigeants et entrepreneurs. Paris · Bruxelles · Genève · en ligne.</p>
+        <p class="foot-tag">Coaching ejecutivo y mentoring confidencial para directivos, líderes senior y emprendedores. España · Europa · online.</p>
       </div>
       <div class="foot-col">
-        <h5>Accompagnements</h5>
+        <h5>Servicios</h5>
         <ul>
-          <li><a href="#services">Coaching de dirigeant</a></li>
-          <li><a href="#services">Mentoring entrepreneurial</a></li>
-          <li><a href="#services">Programme 90 jours</a></li>
-          <li><a href="#methode">Méthode Co-Active</a></li>
+          <li><a href="#servicios">Programa Completo</a></li>
+          <li><a href="#servicios">Intervención Puntual</a></li>
+          <li><a href="#metodo">Método Co-Active</a></li>
         </ul>
       </div>
       <div class="foot-col">
-        <h5>À propos</h5>
+        <h5>Sobre mí</h5>
         <ul>
-          <li><a href="#a-propos">Parcours</a></li>
-          <li><a href="#temoignages">Témoignages</a></li>
-          <li><a href="#rdv">Prendre contact</a></li>
+          <li><a href="#sobre-mi">Trayectoria</a></li>
+          <li><a href="#testimonios">Testimonios</a></li>
+          <li><a href="#reservar">Contacto</a></li>
         </ul>
       </div>
       <div class="foot-col">
-        <h5>Légal</h5>
+        <h5>Legal</h5>
         <ul>
-          <li><a href="mentions-legales.html">Mentions légales</a></li>
-          <li><a href="politique-confidentialite.html">Politique de confidentialité</a></li>
-          <li><a href="cgv.html">Conditions générales</a></li>
-          <li><a href="https://coachingfederation.org/ethics/code-of-ethics" target="_blank" rel="noopener">Déontologie ICF</a></li>
+          <li><a href="aviso-legal.html">Aviso legal</a></li>
+          <li><a href="politica-privacidad.html">Política de privacidad</a></li>
+          <li><a href="condiciones-generales.html">Condiciones generales</a></li>
+          <li><a href="https://coachingfederation.org/ethics/code-of-ethics" target="_blank" rel="noopener">Código Ético ICF</a></li>
         </ul>
       </div>
     </div>
     <div class="foot-bottom">
-      <div>&copy; 2026 Maikel Rausch Coaching. Tous droits réservés.</div>
-      <div class="legal"><span>MKRBIZCOACH — NIF ESX5748560D</span><span>Lugo · Espagne</span>Membre ICF · Mentorday</div>
+      <div>&copy; 2026 Maikel Rausch Coaching. Todos los derechos reservados.</div>
+      <div class="legal"><span>MKRBIZCOACH — NIF ESX5748560D</span><span>Lugo · España</span>Miembro ICF · Mentorday</div>
     </div>
   </div>
 </footer>
 
-<!-- ========================= COOKIE BANNER (RGPD) ========================= -->
-<div id="cookie-banner" role="dialog" aria-live="polite" aria-label="Gestion des cookies" style="position:fixed;bottom:0;left:0;right:0;z-index:100;background:rgba(11,22,35,0.97);backdrop-filter:blur(10px);color:#E8E4DB;padding:22px 24px;border-top:1px solid rgba(201,168,106,0.3);display:none;font-family:'Inter',sans-serif;font-size:0.92rem;line-height:1.55;">
+<!-- ========================= COOKIE BANNER (GDPR) ========================= -->
+<div id="cookie-banner" role="dialog" aria-live="polite" aria-label="Gestión de cookies" style="position:fixed;bottom:0;left:0;right:0;z-index:100;background:rgba(11,22,35,0.97);backdrop-filter:blur(10px);color:#E8E4DB;padding:22px 24px;border-top:1px solid rgba(201,168,106,0.3);display:none;font-family:'Inter',sans-serif;font-size:0.92rem;line-height:1.55;">
   <div style="max-width:1180px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:28px;flex-wrap:wrap;">
     <div style="flex:1;min-width:260px;">
-      <strong style="font-family:'Cormorant Garamond',serif;color:#E2CFA3;font-size:1.1rem;display:block;margin-bottom:4px;font-weight:600;">Respect de votre vie privée</strong>
-      Ce site ne dépose <strong style="color:#E2CFA3;">aucun cookie de mesure d'audience ni de profilage</strong>. Il charge uniquement les polices de caractères Google Fonts, nécessaires à l'affichage. En savoir plus dans notre <a href="politique-confidentialite.html" style="color:#C9A86A;text-decoration:underline;">politique de confidentialité</a>.
+      <strong style="font-family:'Cormorant Garamond',serif;color:#E2CFA3;font-size:1.1rem;display:block;margin-bottom:4px;font-weight:600;">Tu privacidad importa</strong>
+      Este sitio no utiliza <strong style="color:#E2CFA3;">ninguna cookie de análisis ni de perfilado</strong>. Solo carga Google Fonts, necesarias para la visualización. Más información en nuestra <a href="politica-privacidad.html" style="color:#C9A86A;text-decoration:underline;">política de privacidad</a>.
     </div>
     <div style="display:flex;gap:12px;flex-wrap:wrap;">
-      <button id="cookie-accept" style="background:#C9A86A;color:#0B1623;border:none;padding:12px 24px;font-size:0.82rem;font-weight:500;letter-spacing:0.08em;text-transform:uppercase;cursor:pointer;font-family:inherit;transition:background .2s;">J'ai compris</button>
+      <button id="cookie-accept" style="background:#C9A86A;color:#0B1623;border:none;padding:12px 24px;font-size:0.82rem;font-weight:500;letter-spacing:0.08em;text-transform:uppercase;cursor:pointer;font-family:inherit;transition:background .2s;">Entendido</button>
     </div>
   </div>
 </div>
@@ -1385,7 +1361,6 @@ function openCalendly(e) {
     });
     return false;
   }
-  // Popup blocked or script didn't load — the href fallback opens Calendly directly
   return true;
 }
 </script>
