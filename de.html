@@ -1,10 +1,10 @@
 <!doctype html>
-<html lang="en">
+<html lang="de">
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Maikel Rausch — Executive Coaching & Mentoring | Europe-wide</title>
-<meta name="description" content="Executive coaching and mentoring for leaders, senior managers, and entrepreneurs. 20+ years in international management (Avaya, Bosch), ICF-certified Co-Active coach. Confidential discovery session." />
+<title>Maikel Rausch — Executive Coaching & Mentoring | Deutschland · Schweiz · Europa</title>
+<meta name="description" content="Executive Coaching und Mentoring für Führungskräfte, Geschäftsführer und Unternehmer. Über 20 Jahre internationale Managementerfahrung (Avaya, Bosch), ICF-zertifizierter Co-Active Coach. Vertrauliches Erstgespräch." />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -76,13 +76,14 @@
     font-weight: 600;
     color: var(--cream);
     letter-spacing: 0.02em;
+    white-space: nowrap;
   }
   .brand .dot { color: var(--gold); }
   .nav-links {
     display: flex;
-    gap: 32px;
+    gap: 28px;
     align-items: center;
-    font-size: 0.92rem;
+    font-size: 0.88rem;
     color: var(--text-light);
   }
   .nav-links a { transition: color .2s; }
@@ -113,7 +114,6 @@
     transition: color .18s ease;
   }
   .lang a:hover { color: var(--gold); }
-  /* --- Mobile nav hamburger --- */
   .nav-toggle {
     display: none;
     background: none;
@@ -321,10 +321,9 @@
     color: var(--text-light);
   }
   .trust-inner {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr auto 1fr;
     align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
     gap: 24px;
     max-width: 960px;
     margin: 0 auto;
@@ -334,7 +333,6 @@
     flex-direction: column;
     align-items: center;
     gap: 4px;
-    min-width: 140px;
     text-align: center;
   }
   .trust-num {
@@ -384,22 +382,14 @@
     text-decoration: none;
     transition: color .2s ease;
   }
-  .trust-languages:hover { color: var(--gold-soft); }
-  .trust-languages:hover .trust-languages-arrow { transform: translate(2px, -2px); }
   .trust-languages-label {
     font-size: 0.76rem;
     letter-spacing: 0.15em;
     text-transform: uppercase;
   }
-  .trust-languages-arrow {
-    font-size: 0.85rem;
-    color: var(--gold);
-    transition: transform .2s ease;
-    display: inline-block;
-  }
   @media (max-width: 760px) {
     .trust-bar { padding: 24px 0; }
-    .trust-inner { gap: 16px; justify-content: center; }
+    .trust-inner { display: flex; flex-wrap: wrap; gap: 16px; justify-content: center; }
     .trust-sep { display: none; }
     .trust-item { min-width: auto; gap: 2px; }
     .trust-num { font-size: 1.7rem; }
@@ -519,7 +509,7 @@
   .services .lead { color: var(--text-light); opacity: 0.85; }
   .svc-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 28px;
     margin-top: 60px;
   }
@@ -635,7 +625,7 @@
   .process { background: var(--off-white); }
   .process-steps {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 32px;
     margin-top: 70px;
     position: relative;
@@ -686,7 +676,7 @@
     position: relative;
   }
   .test-card::before {
-    content: "\201C";
+    content: "\201E";
     position: absolute;
     top: 16px;
     right: 28px;
@@ -944,27 +934,27 @@
   <div class="nav-inner">
     <a class="brand" href="#">Maikel Rausch<span class="dot">.</span></a>
     <div class="nav-links">
-      <a href="#who-its-for">Who it's for</a>
-      <a href="#about">About</a>
-      <a href="#services">Services</a>
-      <a href="#method">Method</a>
-      <a href="#testimonials">Testimonials</a>
-      <span class="lang"><a href="index.html" title="Version française">FR</a>·<span class="active">EN</span>·<a href="de.html" title="Deutsche Version">DE</a>·<a href="es.html" title="Versión en español">ES</a></span>
+      <a href="#fuer-wen">Für wen</a>
+      <a href="#ueber-mich">Über mich</a>
+      <a href="#angebot">Angebot</a>
+      <a href="#methode">Methode</a>
+      <a href="#klienten">Klienten</a>
+      <span class="lang"><a href="index.html" title="Version française">FR</a>·<a href="en.html" title="English version">EN</a>·<span class="active">DE</span>·<a href="es.html" title="Versión en español">ES</a></span>
     </div>
-    <a class="nav-cta" href="#book">Discovery session</a>
-    <button class="nav-toggle" aria-label="Menu" onclick="this.classList.toggle('open');document.getElementById('mobile-menu').classList.toggle('open')">
+    <a class="nav-cta" href="#termin">Erstgespräch</a>
+    <button class="nav-toggle" aria-label="Menü" onclick="this.classList.toggle('open');document.getElementById('mobile-menu').classList.toggle('open')">
       <span></span><span></span><span></span>
     </button>
   </div>
   <div class="nav-mobile-menu" id="mobile-menu">
-    <a href="#who-its-for" onclick="document.getElementById('mobile-menu').classList.remove('open');document.querySelector('.nav-toggle').classList.remove('open')">Who it's for</a>
-    <a href="#about" onclick="document.getElementById('mobile-menu').classList.remove('open');document.querySelector('.nav-toggle').classList.remove('open')">About</a>
-    <a href="#services" onclick="document.getElementById('mobile-menu').classList.remove('open');document.querySelector('.nav-toggle').classList.remove('open')">Services</a>
-    <a href="#method" onclick="document.getElementById('mobile-menu').classList.remove('open');document.querySelector('.nav-toggle').classList.remove('open')">Method</a>
-    <a href="#testimonials" onclick="document.getElementById('mobile-menu').classList.remove('open');document.querySelector('.nav-toggle').classList.remove('open')">Testimonials</a>
-    <a class="mobile-cta" href="#book" onclick="document.getElementById('mobile-menu').classList.remove('open');document.querySelector('.nav-toggle').classList.remove('open')">Discovery session</a>
+    <a href="#fuer-wen" onclick="document.getElementById('mobile-menu').classList.remove('open');document.querySelector('.nav-toggle').classList.remove('open')">Für wen</a>
+    <a href="#ueber-mich" onclick="document.getElementById('mobile-menu').classList.remove('open');document.querySelector('.nav-toggle').classList.remove('open')">Über mich</a>
+    <a href="#angebot" onclick="document.getElementById('mobile-menu').classList.remove('open');document.querySelector('.nav-toggle').classList.remove('open')">Angebot</a>
+    <a href="#methode" onclick="document.getElementById('mobile-menu').classList.remove('open');document.querySelector('.nav-toggle').classList.remove('open')">Methode</a>
+    <a href="#klienten" onclick="document.getElementById('mobile-menu').classList.remove('open');document.querySelector('.nav-toggle').classList.remove('open')">Klienten</a>
+    <a class="mobile-cta" href="#termin" onclick="document.getElementById('mobile-menu').classList.remove('open');document.querySelector('.nav-toggle').classList.remove('open')">Erstgespräch</a>
     <div class="mobile-lang">
-      <a href="index.html">FR</a>·<span class="active">EN</span>·<a href="de.html">DE</a>·<a href="es.html">ES</a>
+      <a href="index.html">FR</a>·<a href="en.html">EN</a>·<span class="active">DE</span>·<a href="es.html">ES</a>
     </div>
   </div>
 </nav>
@@ -973,14 +963,14 @@
 <header class="hero">
   <div class="container hero-inner">
     <div>
-      <div class="eyebrow">Executive coaching & mentoring</div>
-      <h1>Regain clarity, presence, and <em>purpose</em> in the way you lead.</h1>
+      <div class="eyebrow">Executive Coaching & Mentoring</div>
+      <h1>Entscheiden mit Klarheit, führen mit <em>Souveränität.</em></h1>
       <p class="hero-sub">
-        Confidential, bespoke coaching for executives, senior leaders, and founders who want to make better decisions, lead with greater impact, and find their footing again. In person across Europe — or online, wherever you are.
+        Strategisches Sparring für Führungskräfte, die Leistung bringen wollen, ohne auszubrennen. Vertraulich, auf Augenhöhe, mit über 20 Jahren Konzernerfahrung. Persönlich in Europa — oder online.
       </p>
       <div class="cta-row">
-        <a class="btn btn-primary" href="#book">Request a confidential session</a>
-        <a class="btn btn-ghost" href="#services">Explore services</a>
+        <a class="btn btn-primary" href="#termin">Erstgespräch vereinbaren</a>
+        <a class="btn btn-ghost" href="#angebot">Angebot ansehen</a>
       </div>
     </div>
     <div class="portrait"></div>
@@ -993,299 +983,283 @@
     <div class="trust-inner">
       <div class="trust-item">
         <div class="trust-num">20+</div>
-        <div class="trust-label">Years in international management</div>
+        <div class="trust-label">Jahre internationale Führungserfahrung</div>
       </div>
       <div class="trust-sep"></div>
       <div class="trust-item">
         <div class="trust-badge">ICF · Co-Active</div>
-        <div class="trust-label">Certified executive coaching</div>
+        <div class="trust-label">Zertifizierter Executive Coach</div>
       </div>
       <div class="trust-sep"></div>
       <div class="trust-item">
         <div class="trust-badge">Mentorday</div>
-        <div class="trust-label">Start-up mentoring</div>
+        <div class="trust-label">Start-up-Mentoring</div>
       </div>
     </div>
     <div class="trust-languages" style="cursor:default;">
-      <span class="trust-languages-label">Working languages — EN · FR · DE · ES</span>
+      <span class="trust-languages-label">Arbeitssprachen — DE · EN · FR · ES</span>
     </div>
   </div>
 </section>
 
-<!-- ========================= FOR WHOM ========================= -->
-<section class="for-whom" id="who-its-for">
+<!-- ========================= FÜR WEN ========================= -->
+<section class="for-whom" id="fuer-wen">
   <div class="container">
-    <div class="section-eyebrow">Who it's for</div>
-    <h2>For leaders who carry a great deal — and want to carry it differently.</h2>
+    <div class="section-eyebrow">Für wen</div>
+    <h2>Kennen Sie diese Herausforderungen im Führungsalltag?</h2>
     <p class="lead">
-      You've built something real. You've earned your seat, delivered results, led teams through complexity. And now something is calling for a shift: a decision that won't resolve itself, a role that no longer fits the way it used to, or a transition that demands more than experience alone. You don't need another framework — you need space to think clearly.
+      Auch erfahrene C-Level Manager stoßen an Grenzen. Nicht wegen fehlender Fachkompetenz, sondern durch die Dynamik der Rolle. Sie brauchen kein weiteres Framework — Sie brauchen Raum, um klar zu denken.
     </p>
     <div class="whom-grid">
       <div class="whom-card">
-        <h3>Executives</h3>
-        <h4>The weight at the top</h4>
-        <p>CEOs, managing directors, division heads. You hold strategy and cohesion together — but have few places to think out loud, without agenda or judgement.</p>
+        <h3>Die operative Falle</h3>
+        <h4>Wenn Strategie auf der Strecke bleibt</h4>
+        <p>Sie verbringen 80% Ihres Tagesgeschäfts mit „Firefighting". Strategische Weitsicht bleibt auf der Strecke. Das operative Hamsterrad dreht sich — aber in die richtige Richtung?</p>
       </div>
       <div class="whom-card">
-        <h3>Senior leaders</h3>
-        <h4>New role, new scale</h4>
-        <p>Stepping into a bigger scope, a new organisation, a first C-suite position. The first 90 days set the lasting impression. Structuring your entry beats having to recover from it.</p>
+        <h3>Einsamkeit an der Spitze</h3>
+        <h4>Wenn ein neutraler Sparringspartner fehlt</h4>
+        <p>Schwierige Entscheidungen müssen Sie oft alleine treffen. Es fehlt ein neutraler Sparringspartner für offenes, ungefiltertes Feedback — ohne Agenda, ohne politische Spielchen.</p>
       </div>
       <div class="whom-card">
-        <h3>Entrepreneurs</h3>
-        <h4>From execution to leadership</h4>
-        <p>Your company is growing faster than your capacity to lead it. Delegating, letting go, stepping into the role: the work has changed. Coaching helps you make that shift.</p>
+        <h3>Reibungsverluste im Team</h3>
+        <h4>Wenn Kommunikation bremst statt trägt</h4>
+        <p>Unklare Kommunikation oder schwelende Konflikte bremsen die Performance Ihrer Abteilung. Die technische Kompetenz ist da — was fehlt, ist die emotionale Intelligenz als Führungsinstrument.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ========================= ABOUT ========================= -->
-<section class="about" id="about">
+<!-- ========================= ÜBER MICH ========================= -->
+<section class="about" id="ueber-mich">
   <div class="container about-inner">
     <div class="about-portrait">
-      <div class="role">Your coach</div>
+      <div class="role">Ihr Coach</div>
       <div class="name">Maikel Rausch</div>
     </div>
     <div>
-      <div class="section-eyebrow">Background</div>
-      <h2>Twenty years leading. Then the choice to serve.</h2>
+      <div class="section-eyebrow">Hintergrund</div>
+      <h2>Struktur trifft Empathie.</h2>
       <p>
-        For over twenty years, I held senior management positions — business unit director, head of controlling, marketing director, commercial director — at international corporations including Avaya and Bosch, across multiple countries. I know what it feels like to carry decisions that no one else sees, to manage teams through ambiguity, and to perform under pressure that doesn't switch off.
+        Über zwanzig Jahre lang habe ich Führungspositionen besetzt — als Geschäftsbereichsleiter, Leiter Controlling, Marketing- und Vertriebsdirektor — bei internationalen Konzernen wie Avaya, Bosch, Lidl und Siemens, in mehreren Ländern. Ich weiß, wie es sich anfühlt, Entscheidungen zu tragen, die niemand sonst sieht, Teams durch Unsicherheit zu führen und unter Druck zu liefern, der nie aufhört.
       </p>
       <p>
-        Then I made a deliberate shift. I began consulting and mentoring SMEs and start-ups — and discovered that my real vocation wasn't telling leaders what to do, but helping them find what they already knew. I trained in Co-Active coaching to the highest standards in the profession — those of the <strong>International Coach Federation (ICF)</strong>, the only framework endorsed by Harvard Business School — and I'm now an ICF member and part of the Mentorday accelerator network.
+        Dann habe ich eine bewusste Entscheidung getroffen. Ich begann, KMUs und Start-ups zu beraten und zu mentorieren — und entdeckte, dass meine eigentliche Berufung nicht darin lag, Führungskräften zu sagen, was sie tun sollen, sondern ihnen zu helfen, das zu finden, was sie bereits wussten. Ich habe mich in Co-Active Coaching nach den höchsten Standards der Branche ausbilden lassen — denen der <strong>International Coach Federation (ICF)</strong>, dem einzigen von der Harvard Business School anerkannten Rahmenwerk — und bin ICF-Mitglied sowie Teil des Mentorday-Accelerator-Netzwerks.
       </p>
       <p>
-        Since then, I've guided more than <strong>150 coaching journeys</strong> — from corporate executives at multinationals to first-time founders, and senior professionals navigating a pivotal moment in their career.
+        Seitdem habe ich mehr als <strong>150 Coaching-Prozesse</strong> begleitet — von Konzernmanagern über Erstgründer bis hin zu erfahrenen Führungskräften an einem entscheidenden Wendepunkt ihrer Karriere.
       </p>
       <p>
-        I work in English, French, German, and Spanish. In person across Europe — or online, wherever the work takes you.
+        Mein Coaching ist keine „Therapiestunde", sondern ein strukturierter Prozess für messbare Business-Performance. Ich passe mich Ihrer Realität an, nicht umgekehrt. Ich arbeite auf Deutsch, Englisch, Französisch und Spanisch. Persönlich in Europa — oder online, wo immer Sie sind.
       </p>
       <div class="sig">— Maikel</div>
     </div>
   </div>
 </section>
 
-<!-- ========================= SERVICES ========================= -->
-<section class="services" id="services">
+<!-- ========================= ANGEBOT ========================= -->
+<section class="services" id="angebot">
   <div class="container">
-    <div class="section-eyebrow">Services</div>
-    <h2>Three ways to work together.</h2>
-    <p class="lead">Every engagement is fully bespoke. The framework, however, is clear: co-defined objectives, structured sessions, and an absolute commitment to confidentiality.</p>
+    <div class="section-eyebrow">Angebot</div>
+    <h2>Zusammenarbeit auf Augenhöhe.</h2>
+    <p class="lead">Jeder Prozess ist vollständig maßgeschneidert. Der Rahmen ist jedoch klar: gemeinsam definierte Ziele, strukturierte Sessions und ein absolutes Bekenntnis zur Vertraulichkeit.</p>
 
     <div class="svc-grid">
       <div class="svc-card">
-        <div class="num">I.</div>
-        <h4>Executive Coaching</h4>
-        <p>One-on-one coaching for executives and senior leaders who need to clarify a decision, reclaim their presence, or navigate a high-stakes transition — merger, restructuring, new appointment, or a ceiling they can feel but can't name.</p>
+        <div class="num">A.</div>
+        <h4>Executive Sparring</h4>
+        <p>Der Klassiker. 1:1-Coaching für Führungskräfte, die eine nachhaltige Transformation suchen — Neupositionierung, Onboarding in neuer Rolle, Change-Prozesse oder die strategische Neuausrichtung Ihres Bereichs.</p>
         <ul>
-          <li>8 to 12 sessions</li>
-          <li>Bi-weekly cadence</li>
-          <li>In person or online</li>
-          <li>Absolute confidentiality</li>
+          <li>Laufzeit: 3 bis 6 Monate</li>
+          <li>Regelmäßige 1:1 Sessions (Video/Präsenz)</li>
+          <li>WhatsApp/E-Mail Support zwischen den Terminen</li>
+          <li>Vertraulichkeit absolut</li>
         </ul>
       </div>
       <div class="svc-card">
-        <div class="num">II.</div>
-        <h4>Entrepreneurial Mentoring</h4>
-        <p>For founders and SME leaders who want an experienced perspective on their strategic choices, business model, and governance. A blend of coaching and real-world operational insight.</p>
+        <div class="num">B.</div>
+        <h4>Deep-Dive Fokus-Session</h4>
+        <p>Für schnelle Klarheit bei einer spezifischen Herausforderung: eine schwierige Entscheidung, ein Teamkonflikt, die Vorbereitung auf eine kritische Verhandlung, oder einfach der Bedarf, einmal laut zu denken.</p>
         <ul>
-          <li>6 to 10 sessions</li>
-          <li>Monthly cadence</li>
-          <li>Flexible format, shaped to your challenges</li>
-          <li>Access between sessions</li>
-        </ul>
-      </div>
-      <div class="svc-card">
-        <div class="num">III.</div>
-        <h4>90-Day Programme</h4>
-        <p>An intensive programme to structure a new appointment or a step-change in scope: first-week framing, 30/60/90-day plan, early decisions, early relationships.</p>
-        <ul>
-          <li>12 sessions over 3 months</li>
-          <li>Weekly cadence</li>
-          <li>Online available</li>
-          <li>Shared deliverables</li>
+          <li>Einmalige Intensiv-Sitzung (90–120 Min.)</li>
+          <li>Konkrete Problemlösung & Handlungsplan „to go"</li>
+          <li>Ohne langfristige Verpflichtung</li>
+          <li>Persönlich oder online</li>
         </ul>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ========================= METHOD ========================= -->
-<section class="method" id="method">
+<!-- ========================= METHODE ========================= -->
+<section class="method" id="methode">
   <div class="container method-grid">
     <div>
-      <div class="section-eyebrow">My method</div>
-      <h2>Co-Active coaching: working with the whole person.</h2>
+      <div class="section-eyebrow">Mein Ansatz</div>
+      <h2>Co-Active Coaching: die ganze Person im Blick.</h2>
       <blockquote>
-        "My role is not to give you answers. It's to give you back the space, the silence, and the right questions — so that yours can emerge."
+        „Meine Aufgabe ist es nicht, Ihnen Antworten zu geben. Sondern Ihnen den Raum, die Stille und die richtigen Fragen zurückzugeben — damit Ihre eigenen Antworten entstehen."
       </blockquote>
     </div>
     <div class="method-principles">
       <div class="principle">
         <div class="mark">I.</div>
         <div>
-          <h4>Absolute confidentiality</h4>
-          <p>What is said in session stays in session. No reports to your organisation, no debriefs, no hidden agenda.</p>
+          <h4>Absolute Vertraulichkeit</h4>
+          <p>Was in der Session gesagt wird, bleibt in der Session. Keine Berichte an Ihre Organisation, keine Debriefs, keine versteckten Agenden.</p>
         </div>
       </div>
       <div class="principle">
         <div class="mark">II.</div>
         <div>
-          <h4>Fully bespoke</h4>
-          <p>No off-the-shelf templates. Every engagement is built with you, around your challenges and at your pace.</p>
+          <h4>Vollständig maßgeschneidert</h4>
+          <p>Keine Vorlagen von der Stange. Jeder Prozess wird mit Ihnen aufgebaut, rund um Ihre Herausforderungen und in Ihrem Tempo.</p>
         </div>
       </div>
       <div class="principle">
         <div class="mark">III.</div>
         <div>
-          <h4>Deep listening</h4>
-          <p>A space where you can think out loud — including the things you don't say anywhere else.</p>
+          <h4>Klartext mit Herz</h4>
+          <p>Ein Sparringspartner auf Augenhöhe. Ich schätze Sie und fordere Sie zugleich heraus — damit Sie blinde Flecken erkennen und Ihren Stress reduzieren.</p>
         </div>
       </div>
       <div class="principle">
         <div class="mark">IV.</div>
         <div>
-          <h4>Lasting performance</h4>
-          <p>The goal isn't a spark — it's change that holds: clearer decisions, stronger presence, more grounded relationships.</p>
+          <h4>Nachhaltige Performance</h4>
+          <p>Das Ziel ist kein Strohfeuer — sondern Veränderung, die hält: klarere Entscheidungen, stärkere Präsenz, tragfähigere Beziehungen.</p>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ========================= PROCESS ========================= -->
+<!-- ========================= PROZESS ========================= -->
 <section class="process">
   <div class="container">
-    <div class="section-eyebrow">How it works</div>
-    <h2>What an engagement looks like.</h2>
-    <p class="lead">A clear framework, from the very first conversation. You know exactly what you're committing to — and what you're not.</p>
+    <div class="section-eyebrow">Der Prozess</div>
+    <h2>Wie arbeiten wir zusammen?</h2>
+    <p class="lead">Ein klarer Rahmen, ab dem ersten Gespräch. Sie wissen genau, worauf Sie sich einlassen — und worauf nicht.</p>
 
     <div class="process-steps">
       <div class="step">
         <div class="step-num">01</div>
-        <h4>Discovery session</h4>
-        <p>45 minutes, confidential, no commitment. We talk about what brings you here, and you leave with a clear read — whether or not we end up working together.</p>
+        <h4>Analyse & Entlastung</h4>
+        <p>Wir schaffen sofort Raum zum Atmen. Wir analysieren Ihre aktuelle Situation schonungslos ehrlich, identifizieren die größten Energiefresser und stoppen das akute „Firefighting".</p>
       </div>
       <div class="step">
         <div class="step-num">02</div>
-        <h4>Scoping</h4>
-        <p>If the fit is right, we co-define your objectives, the number of sessions, the cadence, and the format. The proposal is clear and transparent.</p>
+        <h4>Strategie & Fokus</h4>
+        <p>Wir definieren Ihre Rolle neu. Weg vom Mikromanagement, hin zu strategischer Führung. Wir entwickeln klare Ziele und einen Handlungsplan, der zu Ihren Werten passt.</p>
       </div>
       <div class="step">
         <div class="step-num">03</div>
-        <h4>Engagement</h4>
-        <p>Sessions run at the agreed cadence, 75 to 90 minutes each, in person or online. Between sessions, direct access by email remains available.</p>
-      </div>
-      <div class="step">
-        <div class="step-num">04</div>
-        <h4>Closing</h4>
-        <p>We take stock of the progress, name what has shifted, and you leave with an anchoring roadmap for the months ahead.</p>
+        <h4>Transfer & Souveränität</h4>
+        <p>Die Umsetzung im Alltag. Ich begleite Sie als Sparringspartner dabei, die neuen Strategien durchzusetzen — auch gegen Widerstände. Für nachhaltigen Erfolg statt kurzer Strohfeuer.</p>
       </div>
     </div>
   </div>
 </section>
 
 <!-- ========================= TESTIMONIALS ========================= -->
-<section class="testimonials" id="testimonials">
+<section class="testimonials" id="klienten">
   <div class="container">
-    <div class="section-eyebrow">Client voices</div>
-    <h2>What those who've made the shift have to say.</h2>
+    <div class="section-eyebrow">Klientenstimmen</div>
+    <h2>So erleben Klienten den Coaching-Prozess.</h2>
 
     <div class="test-grid">
       <div class="test-card">
-        <p class="test-title">A genuinely valuable find.</p>
-        <p>Finding the right person online isn't easy — Maikel was a real discovery. He showed me methods that shifted my perspective and dramatically accelerated my growth. Today I approach my career with a fundamentally renewed self-image and fresh motivation to pursue my authentic goals. Maikel always hit the mark and reinforced my development at every step.</p>
+        <p class="test-title">Ein echter Glücksgriff!</p>
+        <p>Im Internet ist es oft schwer, den Richtigen zu finden — Michael ist ein echter Glücksgriff! Er zeigte mir Methoden, die meine Perspektive veränderten und meine persönliche Entwicklung enorm beschleunigten. Heute gehe ich meine Karriere mit einem völlig neuen Selbstbild und frischer Motivation an. Michael traf immer den Nagel auf den Kopf und hat mich in meiner positiven Entwicklung bestärkt.</p>
         <div class="test-meta">
           <div class="test-avatar">
             UM
-            <img src="img/testimonials/uwe-meyer.jpg" alt="Portrait of Uwe Meyer" loading="lazy" onerror="this.style.display='none'">
+            <img src="img/testimonials/uwe-meyer.jpg" alt="Portrait von Uwe Meyer" loading="lazy" onerror="this.style.display='none'">
           </div>
           <div>
             <p class="test-name">Uwe Meyer</p>
-            <p class="test-role">Head of China Operations, COBER Industrial Service — Frankfurt</p>
+            <p class="test-role">Verantwortlicher Chinageschäft, COBER Industrial Service — Frankfurt</p>
           </div>
         </div>
       </div>
       <div class="test-card">
-        <p class="test-title">Empathy, trust, and tools that work.</p>
-        <p>The journey with Maikel was defined by progress, focus, and rediscovering who I am. He helped me break through old conditioning, let go, and face my fears. Thank you, Maikel, for this fresh start. I recommend him unreservedly — he combines empathy and trust with the right tools and a genuine commitment to his client.</p>
+        <p class="test-title">100% Empfehlung: Empathie und Werkzeuge, die wirken.</p>
+        <p>Der Prozess mit Michael war geprägt von Fortschritt, Fokus und Selbstdefinition. Er half mir, alte Konditionierungen zu durchbrechen, loszulassen und mich meinen Ängsten zu stellen. Danke, Michael, für diesen „Neuanfang". Ich empfehle ihn zu 100% — er verbindet Empathie und Vertrauen mit den richtigen Werkzeugen und echtem Engagement für den Klienten.</p>
         <div class="test-meta">
           <div class="test-avatar">
             AR
-            <img src="img/testimonials/antonia-romero.jpg" alt="Portrait of Antonia Romero" loading="lazy" onerror="this.style.display='none'">
+            <img src="img/testimonials/antonia-romero.jpg" alt="Portrait von Antonia Romero" loading="lazy" onerror="this.style.display='none'">
           </div>
           <div>
             <p class="test-name">Antonia Romero</p>
-            <p class="test-role">Financial Controller, Telefónica — Madrid</p>
+            <p class="test-role">Controller, Telefónica — Madrid</p>
           </div>
         </div>
       </div>
       <div class="test-card">
-        <p class="test-title">Like a GPS for my communication.</p>
-        <p>Coaching was like a navigation system for my communication skills — at work and at home. With Maikel's help, I broke through barriers I didn't even know existed. In the office, I get my ideas across more clearly and understand my colleagues better. At home, I handle conflict with more confidence. Thank you for the guidance — and for the laughter along the way.</p>
+        <p class="test-title">Wie ein GPS für meine Kommunikation.</p>
+        <p>Das Coaching war wie ein Navigationssystem für meine Kommunikationsfähigkeiten — im Job und privat. Mit Michaels Hilfe habe ich Barrieren durchbrochen, von denen ich nicht wusste, dass sie existieren. Im Büro bringe ich Ideen jetzt klarer rüber und verstehe meine Kollegen besser. Zu Hause löse ich Konflikte souveräner. Danke für die Führung und das Lachen auf dem Weg!</p>
         <div class="test-meta">
           <div class="test-avatar">
             CF
-            <img src="img/testimonials/claudia-favard.jpg" alt="Portrait of Claudia Favard" loading="lazy" onerror="this.style.display='none'">
+            <img src="img/testimonials/claudia-favard.jpg" alt="Portrait von Claudia Favard" loading="lazy" onerror="this.style.display='none'">
           </div>
           <div>
             <p class="test-name">Claudia Favard</p>
-            <p class="test-role">Entrepreneur — Aachen, Germany</p>
+            <p class="test-role">Unternehmerin — Aachen</p>
           </div>
         </div>
       </div>
     </div>
-    <p style="margin-top: 40px; font-size: 0.88rem; color: var(--text-subtle); font-style: italic;">Testimonials published with the explicit consent of those quoted. Additional references available on request in a confidential setting.</p>
+    <p style="margin-top: 40px; font-size: 0.88rem; color: var(--text-subtle); font-style: italic;">Testimonials veröffentlicht mit ausdrücklicher Zustimmung der Zitierten. Weitere Referenzen auf Anfrage in vertraulichem Rahmen.</p>
   </div>
 </section>
 
 <!-- ========================= FAQ ========================= -->
 <section class="faq">
   <div class="container">
-    <div class="section-eyebrow">Frequently asked questions</div>
-    <h2>Before you get in touch.</h2>
+    <div class="section-eyebrow">Häufige Fragen</div>
+    <h2>Bevor Sie sich melden.</h2>
 
     <div class="faq-list">
       <details>
-        <summary>What's the difference between coaching and therapy?</summary>
-        <p>Coaching works on the present and the future: decisions, leadership presence, sustainable performance. Therapy works on the past and emotional suffering. If your needs fall into the latter, I'll refer you to a qualified professional — that's a core ethical principle of the ICF.</p>
+        <summary>Was ist der Unterschied zwischen Coaching und Therapie?</summary>
+        <p>Coaching arbeitet an der Gegenwart und der Zukunft: Entscheidungen, Führungspräsenz, nachhaltige Leistungsfähigkeit. Therapie arbeitet an der Vergangenheit und emotionalem Leid. Sollten Ihre Bedürfnisse in den zweiten Bereich fallen, verweise ich Sie an einen qualifizierten Fachmann — das ist ein ethisches Grundprinzip der ICF.</p>
       </details>
       <details>
-        <summary>How many sessions should I expect?</summary>
-        <p>A typical engagement runs 8 to 12 sessions, spaced two weeks apart. The 90-day programme is more intensive — 12 weekly sessions over three months. The duration is agreed together during scoping; nothing is imposed.</p>
+        <summary>Wie viele Sessions brauche ich?</summary>
+        <p>Das Executive Sparring läuft in der Regel über 3 bis 6 Monate mit regelmäßigen Sessions. Die Deep-Dive Fokus-Session ist ein einmaliges Intensivformat von 90–120 Minuten. Die Dauer wird gemeinsam in der Scoping-Phase vereinbart; nichts wird aufgezwungen.</p>
       </details>
       <details>
-        <summary>How does confidentiality work?</summary>
-        <p>Rigorously and absolutely. What is said in session does not leave the session. If your organisation sponsors the engagement, a three-party framework is set from the start — shared objectives, strictly confidential content.</p>
+        <summary>Wie funktioniert die Vertraulichkeit?</summary>
+        <p>Rigoros und absolut. Was in der Session gesagt wird, verlässt die Session nicht. Wenn Ihre Organisation den Prozess sponsert, wird von Beginn an ein Drei-Parteien-Rahmen festgelegt — gemeinsame Ziele, streng vertraulicher Inhalt.</p>
       </details>
       <details>
-        <summary>In person or online?</summary>
-        <p>Both formats deliver excellent results. In-person sessions are available in Paris, Brussels, and Geneva depending on the period. Online sessions allow me to work with leaders across Europe and beyond — in English, French, German, or Spanish.</p>
+        <summary>Persönlich oder online?</summary>
+        <p>Beide Formate liefern hervorragende Ergebnisse. Persönliche Sessions sind in verschiedenen Städten Europas möglich. Online-Sessions ermöglichen mir die Zusammenarbeit mit Führungskräften in ganz Europa und darüber hinaus — auf Deutsch, Englisch, Französisch oder Spanisch.</p>
       </details>
       <details>
-        <summary>What is Co-Active coaching?</summary>
-        <p>An approach recognised by the International Coach Federation that considers the whole person — not just objectives, but also values, balance, and meaning. It's a rigorous method, particularly suited to leaders who want lasting results, not cosmetic fixes.</p>
+        <summary>Was ist Co-Active Coaching?</summary>
+        <p>Ein von der International Coach Federation anerkannter Ansatz, der die ganze Person betrachtet — nicht nur Ziele, sondern auch Werte, Balance und Sinn. Eine fundierte Methodik, besonders geeignet für Führungskräfte, die nachhaltige Ergebnisse wollen, keine kosmetischen Korrekturen.</p>
       </details>
       <details>
-        <summary>What are the fees?</summary>
-        <p>Fees are presented during the discovery session, based on the format and number of sessions chosen. The discovery session itself is without commitment and free of charge.</p>
+        <summary>Was kostet das Coaching?</summary>
+        <p>Die Honorare werden im Erstgespräch vorgestellt, basierend auf dem gewählten Format und der Anzahl der Sessions. Das Erstgespräch selbst ist unverbindlich und kostenfrei.</p>
       </details>
     </div>
   </div>
 </section>
 
 <!-- ========================= FINAL CTA ========================= -->
-<section class="final-cta" id="book">
+<section class="final-cta" id="termin">
   <div class="container">
-    <h2>45 minutes, confidential, <em>no commitment.</em></h2>
-    <p>A discovery session to talk about what brings you here, see if there's a fit, and leave with a clear perspective — whether or not we end up working together.</p>
-    <a class="btn btn-primary" href="https://calendly.com/michael-rausch-mkrbiz/30min" target="_blank" rel="noopener noreferrer" onclick="return openCalendly(event)">Book a discovery session</a>
-    <span class="final-note">45 min · confidential · no commitment</span>
+    <h2>Lassen Sie uns herausfinden, ob die <em>Chemie stimmt.</em></h2>
+    <p>Ein vertrauliches Erstgespräch — 45 Minuten, um zu besprechen, was Sie hierher führt, den Fit zu prüfen und mit einer klaren Perspektive herauszugehen. Ob wir zusammenarbeiten oder nicht.</p>
+    <a class="btn btn-primary" href="https://calendly.com/michael-rausch-mkrbiz/30min" target="_blank" rel="noopener noreferrer" onclick="return openCalendly(event)">Erstgespräch vereinbaren</a>
+    <span class="final-note">45 Min. · vertraulich · unverbindlich</span>
     <a class="cta-whatsapp" href="https://wa.me/message/23AR7P2DT3ZFF1" target="_blank" rel="noopener noreferrer">
       <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12.05 21.785h-.01a9.84 9.84 0 0 1-5.014-1.373l-.36-.214-3.73.978.996-3.635-.235-.374A9.86 9.86 0 0 1 2.19 12.05c0-5.437 4.424-9.86 9.87-9.86a9.82 9.82 0 0 1 6.98 2.892 9.82 9.82 0 0 1 2.893 6.98c-.004 5.444-4.428 9.87-9.87 9.87l-.013-.002zm8.413-18.226A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c-.001 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.88 11.88 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.82 11.82 0 0 0-3.48-8.413z"/></svg>
-      Or message me on WhatsApp
+      Oder schreiben Sie mir per WhatsApp
     </a>
   </div>
 </section>
@@ -1296,51 +1270,50 @@
     <div class="foot-grid">
       <div>
         <div class="foot-brand">Maikel Rausch<span class="dot">.</span></div>
-        <p class="foot-tag">Confidential coaching & mentoring for executives, senior leaders, and entrepreneurs. Paris · Brussels · Geneva · online.</p>
+        <p class="foot-tag">Vertrauliches Executive Coaching & Mentoring für Führungskräfte, Geschäftsführer und Unternehmer. Deutschland · Schweiz · Europa · online.</p>
       </div>
       <div class="foot-col">
-        <h5>Services</h5>
+        <h5>Angebot</h5>
         <ul>
-          <li><a href="#services">Executive Coaching</a></li>
-          <li><a href="#services">Entrepreneurial Mentoring</a></li>
-          <li><a href="#services">90-Day Programme</a></li>
-          <li><a href="#method">Co-Active Method</a></li>
+          <li><a href="#angebot">Executive Sparring</a></li>
+          <li><a href="#angebot">Deep-Dive Fokus-Session</a></li>
+          <li><a href="#methode">Co-Active Methode</a></li>
         </ul>
       </div>
       <div class="foot-col">
-        <h5>About</h5>
+        <h5>Über mich</h5>
         <ul>
-          <li><a href="#about">Background</a></li>
-          <li><a href="#testimonials">Testimonials</a></li>
-          <li><a href="#book">Get in touch</a></li>
+          <li><a href="#ueber-mich">Hintergrund</a></li>
+          <li><a href="#klienten">Klientenstimmen</a></li>
+          <li><a href="#termin">Kontakt</a></li>
         </ul>
       </div>
       <div class="foot-col">
-        <h5>Legal</h5>
+        <h5>Rechtliches</h5>
         <ul>
-          <li><a href="legal-notice.html">Legal notice</a></li>
-          <li><a href="privacy-policy.html">Privacy policy</a></li>
-          <li><a href="terms.html">Terms & conditions</a></li>
-          <li><a href="https://coachingfederation.org/ethics/code-of-ethics" target="_blank" rel="noopener">ICF Code of Ethics</a></li>
+          <li><a href="impressum.html">Impressum</a></li>
+          <li><a href="datenschutz.html">Datenschutz</a></li>
+          <li><a href="agb.html">AGB</a></li>
+          <li><a href="https://coachingfederation.org/ethics/code-of-ethics" target="_blank" rel="noopener">ICF Ethikkodex</a></li>
         </ul>
       </div>
     </div>
     <div class="foot-bottom">
-      <div>&copy; 2026 Maikel Rausch Coaching. All rights reserved.</div>
-      <div class="legal"><span>MKRBIZCOACH — NIF ESX5748560D</span><span>Lugo · Spain</span>ICF Member · Mentorday</div>
+      <div>&copy; 2026 Maikel Rausch Coaching. Alle Rechte vorbehalten.</div>
+      <div class="legal"><span>MKRBIZCOACH — NIF ESX5748560D</span><span>Lugo · Spanien</span>ICF-Mitglied · Mentorday</div>
     </div>
   </div>
 </footer>
 
-<!-- ========================= COOKIE BANNER (GDPR) ========================= -->
-<div id="cookie-banner" role="dialog" aria-live="polite" aria-label="Cookie management" style="position:fixed;bottom:0;left:0;right:0;z-index:100;background:rgba(11,22,35,0.97);backdrop-filter:blur(10px);color:#E8E4DB;padding:22px 24px;border-top:1px solid rgba(201,168,106,0.3);display:none;font-family:'Inter',sans-serif;font-size:0.92rem;line-height:1.55;">
+<!-- ========================= COOKIE BANNER (DSGVO) ========================= -->
+<div id="cookie-banner" role="dialog" aria-live="polite" aria-label="Cookie-Verwaltung" style="position:fixed;bottom:0;left:0;right:0;z-index:100;background:rgba(11,22,35,0.97);backdrop-filter:blur(10px);color:#E8E4DB;padding:22px 24px;border-top:1px solid rgba(201,168,106,0.3);display:none;font-family:'Inter',sans-serif;font-size:0.92rem;line-height:1.55;">
   <div style="max-width:1180px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:28px;flex-wrap:wrap;">
     <div style="flex:1;min-width:260px;">
-      <strong style="font-family:'Cormorant Garamond',serif;color:#E2CFA3;font-size:1.1rem;display:block;margin-bottom:4px;font-weight:600;">Your privacy matters</strong>
-      This site does not use <strong style="color:#E2CFA3;">any analytics or profiling cookies</strong>. It only loads Google Fonts, which are necessary for display. Learn more in our <a href="privacy-policy.html" style="color:#C9A86A;text-decoration:underline;">privacy policy</a>.
+      <strong style="font-family:'Cormorant Garamond',serif;color:#E2CFA3;font-size:1.1rem;display:block;margin-bottom:4px;font-weight:600;">Ihre Privatsphäre ist uns wichtig</strong>
+      Diese Website verwendet <strong style="color:#E2CFA3;">keine Analyse- oder Profiling-Cookies</strong>. Es werden lediglich Google Fonts geladen, die für die Darstellung erforderlich sind. Mehr dazu in unserer <a href="datenschutz.html" style="color:#C9A86A;text-decoration:underline;">Datenschutzerklärung</a>.
     </div>
     <div style="display:flex;gap:12px;flex-wrap:wrap;">
-      <button id="cookie-accept" style="background:#C9A86A;color:#0B1623;border:none;padding:12px 24px;font-size:0.82rem;font-weight:500;letter-spacing:0.08em;text-transform:uppercase;cursor:pointer;font-family:inherit;transition:background .2s;">Understood</button>
+      <button id="cookie-accept" style="background:#C9A86A;color:#0B1623;border:none;padding:12px 24px;font-size:0.82rem;font-weight:500;letter-spacing:0.08em;text-transform:uppercase;cursor:pointer;font-family:inherit;transition:background .2s;">Verstanden</button>
     </div>
   </div>
 </div>
